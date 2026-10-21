@@ -1,0 +1,12 @@
+{
+  "archive": "Tokentra-1.0.0-rc.3-compliance-source-152773ce89f4.zip",
+  "entries": 618,
+  "forbidden_paths": [],
+  "tokenizer_asset_hashes": {
+    "o200k_base": true,
+    "cl100k_base": true,
+    "p50k_base": true
+  },
+  "local_profile_path_matches": [],
+  "sha256": "3975aa1939317f103b113d5c4a63c9642047103d86cc188660d7116d1d28bef5"
+}

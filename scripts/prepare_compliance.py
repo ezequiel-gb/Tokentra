@@ -54,15 +54,14 @@ def main():
             data = json.loads(path.read_text('utf-8'), strict=False)
             for entry in data if isinstance(data, list) else [data]:
                 qt_entries.append(dict(source=component, file=path.relative_to(source / 'extracted').as_posix(), **entry))
-    report = dict(status='REDISTRIBUTION BLOCKED',
+    report = dict(status='Inventory generated; consult docs/COMPLIANCE.md for the reviewed release decision',
         python=sys.version, openssl=ssl.OPENSSL_VERSION, zlib=zlib.ZLIB_RUNTIME_VERSION,
         expat=pyexpat.EXPAT_VERSION, mpdecimal=decimal.__libmpdec_version__,
         packages=sorted(packages, key=lambda p:p['name'].lower()), qt_source_attributions=qt_entries,
         qt_attribution_scope='Conservative upstream source superset, not a claim that every item is compiled into Windows binaries',
-        unresolved=['Final updated installer desktop licence-page and upgrade verification',
-                    'Separate publication authorisation remains withheld'],
-        documented_conditions=['Owner reports Community 2022 installed and licence accepted; exact tooling path visibility pending',
-                               'Owner approved scoped Microsoft runtime licence acceptance during setup',
+        unresolved=['Separate publication authorisation remains withheld; reviewed release gates are in COMPLIANCE.md'],
+        documented_conditions=['Microsoft developer entitlement must remain satisfied; verified product evidence is in community-components.json',
+                               'Retain approved scoped Microsoft runtime licence acceptance during setup',
                                'Full Qt/PySide source archives must accompany every eventual binary download'],
         recommended_verification=['Exact supplier Rust lockfile and libffi/xz semantic versions',
                                   'Independent compatible modified Qt library test; not an additional legal rebuild requirement'],

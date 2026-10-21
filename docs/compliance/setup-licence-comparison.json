@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "comparison": "Whitespace-normalised actual setup accessibility document equals approved INSTALLATION_TERMS.txt",
+  "approved_terms_sha256": "e28f7dbcd61907443337af1945ebabf6644e9edd8dc1f895a6ebc752cd7c4b22"
+}

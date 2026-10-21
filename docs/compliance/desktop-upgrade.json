@@ -1,0 +1,69 @@
+{
+  "installer_sha256": "ac6b5e9b8f97d876021c3a89ca1f7eeead2b5854274f14067216da05ff043839",
+  "owner_authorization": "Renewed approval to resume the previously approved exact-package visible upgrade and verification",
+  "status": "passed",
+  "launch_context": "Actual interactive Windows desktop; installer launched by double-click in File Explorer",
+  "licence_page": {
+    "observed": true,
+    "next_disabled_before_acceptance": true,
+    "accepted_under_owner_approval": true,
+    "scope": "Microsoft runtime files only; Tokentra MIT and Qt LGPL rights explicitly retained",
+    "text_evidence": "setup-licence-accessibility.txt"
+  },
+  "setup_completed": true,
+  "payload_files_matching": 353,
+  "payload_mismatches": 0,
+  "installed_directory": "%LOCALAPPDATA%/Programs/Tokentra",
+  "application_version": "1.0.0-rc.3",
+  "exe_sha256": "0741bc3cb5169b9a8a7cdbd7d373a324798c0a3fb33d320142ff9afb9238f7a4",
+  "uninstaller": "%LOCALAPPDATA%/Programs/Tokentra/unins000.exe",
+  "uninstaller_version": "1.0.0-rc.3",
+  "windows_settings": {
+    "independently_observed": true,
+    "matching_entries": 1,
+    "display_name": "Tokentra",
+    "version": "1.0.0-rc.3",
+    "publisher": "Ezequiel Gomez",
+    "displayed_size": "84.5 MB",
+    "uninstall_action_enabled": true,
+    "screenshot": "desktop/settings-installed-tokentra.jpg"
+  },
+  "supplemental_registry": {
+    "scope": "Command-view metadata only; not the desktop registration proof",
+    "hive": "HKCU",
+    "key": "Software/Microsoft/Windows/CurrentVersion/Uninstall/{6CD1A9C2-CE1B-4EE2-BFB4-C8ED54D7C2A6}_is1",
+    "display_name": "Tokentra",
+    "version": "1.0.0-rc.3",
+    "publisher": "Ezequiel Gomez",
+    "uninstall_command": "\"%LOCALAPPDATA%/Programs/Tokentra/unins000.exe\""
+  },
+  "shortcut": {
+    "per_user_start_menu_target": "%LOCALAPPDATA%/Programs/Tokentra/Tokentra.exe",
+    "registered_app_launch": "Tokentra.Desktop successfully reopened the installed executable"
+  },
+  "ui_smoke": {
+    "synthetic_input": "Hello world!",
+    "encoding": "o200k_base",
+    "tokens": 3,
+    "words": 2,
+    "characters": 12,
+    "shared_editor_preserved_on_mode_switch": true,
+    "capacity": 128000,
+    "allowance": 8000,
+    "planned_allocation": 8003,
+    "unallocated": 119997,
+    "normal_restart_blank_workspace": true,
+    "reopened_mode": "counter",
+    "reopened_encoding": "o200k_base"
+  },
+  "preferences": "Existing mode/encoding and displayed scenario observed; original counter mode restored after smoke test. No import, preference deletion or document-file mutation performed. No byte-for-byte pre-upgrade registry snapshot is claimed.",
+  "uninstall_cycle": "Not repeated: previous actual desktop uninstall/reinstall evidence retained; this pass changed licence/notices only, with stable installer identity and uninstaller architecture.",
+  "offline_installed": "offline-installed.json passed via verified Community MSBuild",
+  "limitations": [
+    "Development Windows desktop, not a clean VM",
+    "No physical network disconnection/packet capture claimed",
+    "Accessibility-only evidence for licence page; genuine completion, app and Settings screenshots retained"
+  ],
+  "final_state": "Newest compliance candidate installed; reopened in Counter mode with blank workspace",
+  "publication": "Explicitly on hold"
+}

@@ -1,93 +1,149 @@
-# Current compliance preparation — 21 October 2026
+# Windows compliance candidate verified — 21 October 2026
 
-This section supersedes historical compliance blockers below. Feature/UI baseline
-remains **1.0.0-rc.3**; no application source changed. Publication is explicitly on
-hold until final validation and separate owner authorisation.
+**All identified mandatory redistribution requirements satisfied; Windows release
+ready for final publication authorisation**, for the evaluated RC3 installer and
+source-delivery arrangement documented in [COMPLIANCE.md](COMPLIANCE.md). This is
+an engineering assessment, not a formal legal opinion. Publication remains on hold
+by explicit owner instruction. No final v1.0.0 installer/tag or public upload exists;
+version promotion, an exact final build and asset review remain normal final-release
+steps in a separately authorised workflow.
 
-## Current findings
+## Microsoft entitlement and conditions
 
-- Owner reports installing Visual Studio Community 2022 and accepting its terms for
-  the MIT project, and approves Microsoft's unmodified runtime licence during setup.
-  Community eligibility/redistribution conditions, alternatives and evidence limits
-  are documented in [COMPLIANCE.md](COMPLIANCE.md). Command tooling initially cannot
-  see the reported installation; exact path/component verification is pending.
-- Setup now presents the approved Microsoft-only licence page. Tokentra MIT and Qt
-  LGPL rights are expressly preserved. AppId, version, preferences, shortcuts,
-  install directory, uninstaller architecture and all application code are unchanged.
-- Added 16 crate notice sets (13 binary-evidenced versions), matching Rust 1.97.1
-  library attributions, native Python dependency notices, prominent top-level notices
-  and [Qt replacement/source guidance](QT_REPLACEMENT.md). Both complete Qt/PySide
-  source archives are retained at `release-audit/third-party-sources`; hashes verified.
-  They must accompany eventual binary downloads under GPLv3 section 6(d).
-- An independent Qt rebuild and complete historical permissive dependency graph are
-  recommended assurance improvements; neither is itself an identified mandatory
-  licence condition. Exact libffi/xz versions and some inlined crate versions remain
-  honestly unestablished. See the A/B/C/D decision matrix rather than old blanket gates.
-- Current upstream security advisories were reviewed. Later Python/OpenSSL/Expat fixes
-  concern functionality without an identified untrusted-input path in Tokentra.
-  A tested Python 3.12 runtime refresh is recommended; no gratuitous dependency upgrade.
+Owner accepted Visual Studio Community 2022 terms for the approved MIT project.
+Independent `vswhere` inspection now confirms **Community 17.14.42**, installation
+version 17.14.37806.7, complete/launchable/non-prerelease, no reboot required, in
+`C:\Program Files\Microsoft Visual Studio\2022\Community`.
+Core Editor is registered. MSBuild **17.14.60.43110** is present and successfully
+ran the installed-package verification target. The optional MSBuild and VC.Redist
+component-ID queries are false; their registration is not a separate Community §4
+redistribution condition for the inventoried release DLLs. No paid licence, compiler
+workload or runtime substitution was necessary. Earlier absent-product/security-prompt
+findings are resolved; the owner handled Windows permission prompts.
 
-## New build and checks
+All ten redistributed runtime DLL copies (five names, 14.44.35211.0) remain inventoried
+with identities/signatures/importers. The owner-approved, Microsoft-only runtime
+licence page was read from the actual desktop wizard. Next was disabled until
+acceptance; the displayed document equals the approved build input after whitespace
+normalisation. Tokentra MIT and Qt LGPL rights are expressly preserved.
 
-Installer: `release-compliance/Tokentra-1.0.0-rc.3-compliance-windows-x64-setup.exe`.
-Size: **25,497,734 bytes**. SHA-256:
-`ac6b5e9b8f97d876021c3a89ca1f7eeead2b5854274f14067216da05ff043839`.
-This is an unsigned local compliance candidate, not a published/final v1.0 installer.
-Earlier RC3 and registration-repair packages are preserved.
+## Exact installer and installed state
 
-Commands from workspace (all Python commands use `.venv/Scripts/python.exe`):
+`release-compliance/Tokentra-1.0.0-rc.3-compliance-windows-x64-setup.exe`
+
+- Size: **25,497,734 bytes**; unsigned, local compliance candidate.
+- SHA-256: `ac6b5e9b8f97d876021c3a89ca1f7eeead2b5854274f14067216da05ff043839`.
+- Launched by actual File Explorer; one approved in-place upgrade completed.
+- **Windows Settings independently shows exactly one Tokentra 1.0.0-rc.3 entry**,
+  publisher Ezequiel Gomez, 84.5 MB, with enabled Uninstall action.
+- Installed directory: `%LOCALAPPDATA%\Programs\Tokentra`.
+- All **353 payload files match** the approved build; zero mismatches.
+- Installed executable and `unins000.exe` report product version 1.0.0-rc.3.
+- Executable SHA-256: `0741bc3cb5169b9a8a7cdbd7d373a324798c0a3fb33d320142ff9afb9238f7a4`.
+- HKCU uninstall metadata and per-user Start menu target were checked as supplemental
+  evidence. They do not substitute for actual Settings visibility.
+- Registered `Tokentra.Desktop` launch works. The newest candidate remains installed
+  and reopened in Token Counter, blank workspace, o200k_base.
+
+App source, AppId, geometry, worker/tokenisation logic, install directory and uninstaller
+architecture are unchanged. All **51 native DLL/PYD files** equal the prior verified
+payload. The previous actual desktop uninstall/reinstall cycle is retained for its
+exact earlier installer; no unnecessary destructive cycle was repeated for legal-file
+changes. Uninstaller presence/version/action are verified here, not a newly executed
+uninstall of this package.
+
+## Functional and offline evidence
+
+The actual installed GUI counted synthetic `Hello world!` as **3 tokens, 2 words,
+12 Unicode characters**. Context Planning retained the shared text and displayed
+**128,000** capacity, **8,000** allowance, **8,003** planned allocation, **119,997**
+unallocated. All digits are visible in the genuine screenshot. Original Counter
+mode was restored before normal close/reopen; the workspace reopened empty, with
+expected encoding/mode. No user document was imported, modified or saved. Scenario
+inputs were not edited. No byte-for-byte pre-upgrade registry snapshot is claimed.
+
+Installed empty-cache verification passed through Community MSBuild:
 
 ```powershell
-.venv\Scripts\python.exe scripts/collect_native_notices.py
+& 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe' .verification-tmp/verify-installed.proj /nologo /v:minimal
+```
+
+The local target invokes this reproducible equivalent:
+
+```powershell
+.venv\Scripts\python.exe scripts/check_packaged.py --dist-dir "$env:LOCALAPPDATA\Programs" --report docs/compliance/offline-installed.json
+```
+
+Results: GUI startup, all three encodings (reference counts 6/8/11), encoding changes,
+plain-text import, Context Planning and isolated settings passed, with empty caches,
+external cwd, developer paths removed and Python socket/DNS denied.
+
+Completed prior checks were not repeated without purpose: **121 passed in 20.91s**,
+zero failures/skips; payload audit passed (353 files, 83,412,896 bytes); four native
+Qt scale factors 1/1.25/1.5/2 passed; native endpoint observation had **56 samples,
+zero endpoints, zero errors**. The initial sandboxed offline attempt timed out with
+a temporary-directory permission error; its outside-sandbox retry passed. No failure
+was concealed. No expensive benchmark was repeated: application/native counting bytes
+are unchanged. Prior measured performance remains applicable within its documented scope.
+
+Exact previous commands/results remain in the preparation source checkpoint and
+machine-readable evidence. In particular:
+
+```powershell
 .venv\Scripts\python.exe -m pytest -q --basetemp .test-tmp-compliance --junitxml docs/compliance/tests.xml --tb=short
 .venv\Scripts\python.exe -m PyInstaller --noconfirm --distpath dist-compliance --workpath build-compliance packaging/tokentra.spec
 .venv\Scripts\python.exe scripts/audit_package.py --dist-dir dist-compliance --report docs/compliance/package-audit.json
 .venv\Scripts\python.exe scripts/check_packaged.py --dist-dir dist-compliance --report docs/compliance/offline.json --native-window-checks
 .venv\Scripts\python.exe scripts/observe_offline.py --executable dist-compliance/Tokentra/Tokentra.exe --report docs/compliance/native-endpoints.json
-.venv\Scripts\python.exe scripts/prepare_compliance.py --dist-dir dist-compliance --output docs/compliance
-& .tools/InnoSetup6/ISCC.exe /DPayloadDir=..\dist-compliance\Tokentra /DInstallerOutput=..\release-compliance /DInstallerBaseName=Tokentra-1.0.0-rc.3-compliance-windows-x64-setup packaging/tokentra.iss
 ```
 
-**121 passed in 20.91s**, zero failures/skips. PyInstaller and Inno builds completed.
-Payload audit: **353 files, 83,412,896 bytes**, no detected path/hygiene issues,
-three tokeniser hashes correct, pinned Python DLL hashes correct. All **51 native
-DLL/PYD files** equal the previous verified payload; application-source changes: zero.
+Genuine local desktop evidence is in `docs/compliance/desktop`: setup completion,
+installed Counter/Planning, Settings entry/uninstall action and blank restart images.
+`desktop-upgrade.json`, `installed-payload.json`, `setup-licence-comparison.json`,
+`community-components.json` and `offline-installed.json` provide structured evidence.
+No clean VM, physical network disconnection, native packet capture or macOS/Linux
+verification is claimed. Endpoint sampling does not rule out transient connections.
 
-The first packaged offline check inside the sandbox timed out after 60 seconds and
-its redirected temporary-directory cleanup was denied. The same command outside
-that context passed: fresh empty caches, external cwd, developer paths removed,
-all three encodings, GUI startup/switching, file import, Context Planning and settings.
-Native Windows transitions passed at Qt scale factors **1, 1.25, 1.5, 2**.
-Endpoint observer: **56 samples, zero observed TCP/UDP endpoints, zero errors**.
-This is not physical disconnection, packet capture, a clean VM or proof against
-transient native activity. No expensive million-token benchmark was repeated:
-application and native counting bytes are unchanged; earlier measured evidence stands.
+## Licensing materials and source readiness
 
-The previous actual desktop visible install/uninstall/reinstall remains verified
-for its exact registration-repair installer. **New compliance-installer visible
-upgrade/licence-page verification is pending action-time confirmation.** No new
-uninstall cycle is necessary. No isolated registry-only claim substitutes for Settings.
-No macOS/Linux or clean-machine validation is claimed.
+The actual installer includes full native/Rust notices, 16 crate notice sets (13
+binary-evidenced versions), Rust 1.97.1 library attribution, approved MIT, GPL/LGPL/
+Qt notices, scoped Microsoft terms and top-level Qt replacement guidance. Both full
+Qt/PySide corresponding-source archives are retained at
+`release-audit/third-party-sources`, with verified hashes. **They must accompany
+any authorised binary download with equivalent access**, alongside the notices.
+This source-delivery condition is not replaced by a homepage URL or by passing tests.
 
-The current source scan passed after replacing one literal developer profile path
-with `%LOCALAPPDATA%` notation. The initial finding is retained. A high-signal scan
-of 269 historical text blobs found two old copies of that path and no credential
-signatures. Preserve historical local commits; prepare a separate clean initial
-publication branch/current-tree archive rather than publishing those parents.
+Exact libffi/xz supplier semantic versions, some inlined Rust versions, supplier
+Qt configure flags and an independent modified Qt build remain documented provenance/
+assurance improvements. No additional full-source/rebuild duty was identified merely
+because a permissively licensed library is native. No unresolved owner licensing
+choice remains for this installer. A future portable binary needs equivalent Microsoft
+recipient acceptance and is not automatically approved by the setup result.
 
-## Remaining work and release decision
+Later Python/OpenSSL/Expat advisories were assessed against deployed input paths;
+a tested Python 3.12 patch refresh is recommended. No application-exploitable path
+was established in that review. No vulnerability-free or formal legal certificate
+is claimed.
 
-- Final updated-installer visible upgrade, licence-page and actual Settings check.
-- Reconcile the exact Community installation path/components where accessible;
-  owner acceptance is recorded separately from independent tooling verification.
-- Preserve companion Qt source assets and notices when preparing a final tagged build.
-- Separate final publication authorisation remains withheld; nothing was published.
+The allowlisted source scan passes. Historical local commits with two old developer
+profile-path document blobs are preserved on `main` at `4b62fdd`; a separate clean
+`publication-preparation` branch avoids those historical parents. No shared history
+was rewritten. Source checkpoints/archives and SHA-256 are recorded in
+`release-compliance/build-manifest.json`; the earlier preparation archive is preserved.
+Documentation/evidence updated after binary build is distinguished from its packaged
+build-time snapshot. Final v1.0 promotion must build from its exact reviewed commit.
 
-Current recommendation: **Remaining owner action required** for the visible verification
-and separate publication step. No paid licensing route or new application feature is
-required. This is not an unconditional legal-compliance certificate. See COMPLIANCE.md
-for conditions and source obligations, and release-compliance/build-manifest.json
-for the exact candidate identity.
+## Remaining conditions
+
+- Maintain applicable Microsoft terms/eligibility and the installer acceptance page.
+- Deliver the complete companion Qt/PySide sources and required notices with binaries.
+- Complete final version/tag/build/asset review before an eventual public v1.0 release.
+- Obtain **separate final publication authorisation**. No GitHub action was performed.
+
+The compliance candidate is installed and verified; the earlier desktop/tooling
+handoffs are closed. macOS/Linux, clean-machine and optional provenance improvements
+remain clearly separated from Windows redistribution blockers.
 
 ---
 

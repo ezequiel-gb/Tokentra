@@ -96,3 +96,15 @@ HTTPS inputs and hashes are recorded in docs/compliance/native-rust-notices.json
 It reads archives without executing third-party code. Large source/toolchain archives
 are retained locally, not copied into the application. Exact supplier dependency
 lockfiles and independently rebuilt Qt replacements remain recommended improvements.
+
+## Completed compliance upgrade, 21 October 2026
+
+The approved compliance installer was run from actual File Explorer and completed
+one in-place desktop upgrade. Its scoped Microsoft licence page and acceptance
+gate were observed. Settings shows exactly one RC3 entry with publisher Ezequiel
+Gomez and an enabled Uninstall action. All 353 payload files match the build.
+Registered shortcut launch, both modes, normal restart with blank workspace and
+installed empty-cache offline checks passed. New uninstall/reinstall was not needed
+for legal-file changes; the earlier actual desktop lifecycle evidence is retained.
+The compliance candidate remains installed and open in Counter mode. No clean VM
+or physical network-disconnection claim is made. See docs/compliance/desktop-upgrade.json.

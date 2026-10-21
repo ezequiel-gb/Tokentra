@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "files": 392,
+  "files": 394,
   "findings": [],
   "scope": "Allowlisted source and high-signal pattern scan; not a comprehensive secret/vulnerability certification",
   "history": "No Git repository existed in supplied workspace; curated initial history must be reviewed before publication"

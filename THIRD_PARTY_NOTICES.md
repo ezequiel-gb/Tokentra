@@ -1,9 +1,9 @@
 # Third-party notices and redistribution inventory
 
 Tokentra code is MIT licensed, Copyright (c) 2026 Ezequiel Gomez. Third-party software
-retains its own licences. **Publication remains on hold pending final validation and separate authorisation**; see
-[COMPLIANCE.md](docs/COMPLIANCE.md). The owner reports accepting Visual Studio Community
-2022 terms and approved Microsoft runtime terms during setup. MIT does not satisfy
+retains its own licences. **Publication remains on hold pending separate final authorisation**; see
+[COMPLIANCE.md](docs/COMPLIANCE.md). Community 2022 17.14.42 is independently verified; the owner accepted its terms.
+The approved scoped Microsoft runtime terms were verified during actual setup. MIT does not satisfy
 Qt or other dependency obligations. See top-level INSTALLATION_TERMS.txt and QT_REPLACEMENT.md
 in the Windows package. Microsoft terms apply only to Microsoft runtime files.
 
@@ -27,7 +27,7 @@ Installed dependencies and bundled packages are distinguished.
 | bzip2 | 1.0.8, binary string | bzip2 licence, retained in Python licence | Yes, _bz2 |
 | libffi | ABI 8, semantic version unknown | MIT-style; upstream MIT notice superset retained; exact version not claimed | Yes; exact supplier version not established; no full-source duty identified |
 | xz/LZMA | Exact version unknown | liblzma public-domain / modern 0BSD; upstream statements retained | Yes, _lzma; exact version unestablished, licence-family notices retained |
-| Microsoft C/C++ runtime | 14.44.35211.0 | Microsoft Distributable Code terms, entitlement required | Yes; Community route owner-attested; scoped Microsoft licence accepted during setup; final installer verification pending |
+| Microsoft C/C++ runtime | 14.44.35211.0 | Microsoft Distributable Code terms, entitlement required | Yes; Community product verified and owner licence acceptance recorded; scoped Microsoft licence accepted during verified actual setup |
 | Windows UCRT/ICU | OS supplied | Windows system components | Not copied in revised payload |
 | PyInstaller | 6.22.3 | GPL-2.0-or-later with bootloader exception, full texts retained | Bootloader/runtime hooks; exception permits independent app licensing |
 | Inno Setup | 6.7.3 | Inno licence, retain copyright/terms, no misrepresentation | Setup/uninstaller; full licence retained |

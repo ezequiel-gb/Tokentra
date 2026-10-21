@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "network": "Python socket connections and DNS denied",
+  "encodings": {
+    "o200k_base": 6,
+    "cl100k_base": 8,
+    "p50k_base": 11
+  },
+  "gui_startup": true,
+  "imported_file": true,
+  "gui_encoding_switches": true,
+  "planning": true,
+  "persisted_keys": [
+    "additional_allowance",
+    "context_capacity",
+    "encoding",
+    "geometry",
+    "mode"
+  ],
+  "outside_source_directory": true,
+  "developer_search_paths_removed": true
+}

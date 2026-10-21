@@ -1,5 +1,5 @@
 {
-  "status": "REDISTRIBUTION BLOCKED",
+  "status": "Windows compliance candidate verified; publication expressly on hold",
   "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
   "openssl": "OpenSSL 3.5.8 25 Aug 2026",
   "zlib": "1.3.2",
@@ -2241,13 +2241,13 @@
   ],
   "qt_attribution_scope": "Conservative upstream source superset, not a claim that every item is compiled into Windows binaries",
   "unresolved": [
-    "Final updated installer desktop licence-page and upgrade verification",
-    "Separate publication authorisation remains withheld"
+    "Separate final publication authorisation remains withheld"
   ],
   "documented_conditions": [
-    "Owner reports Community 2022 installed and licence accepted; exact tooling path visibility pending",
-    "Owner approved scoped Microsoft runtime licence acceptance during setup",
-    "Full Qt/PySide source archives must accompany every eventual binary download"
+    "Verified Community 2022 17.14.42 plus owner licence acceptance; maintain eligibility and redistribution terms",
+    "Approved scoped Microsoft runtime licence acceptance verified in actual desktop setup",
+    "Full Qt/PySide source archives must accompany every eventual binary download",
+    "Final v1.0 version/tag/asset promotion requires an exact final build review"
   ],
   "recommended_verification": [
     "Exact supplier Rust lockfile and libffi/xz semantic versions",

@@ -4,7 +4,7 @@
   "signature": "Valid, Microsoft Corporation",
   "owner_authorization": "Owner reports Community 2022 installed with minimal configuration, licence terms accepted, and runtime licence during setup approved.",
   "admin_token": false,
-  "installation_status": "Owner-attested installed; command and escalated command views cannot locate vswhere or standard Community directories; exact path requested. No claim of independent component verification.",
+  "installation_status": "Independently verified Community 2022 17.14.42, complete/launchable/non-prerelease, at owner-supplied path; MSBuild works.",
   "terms": [
     {
       "name": "community",
@@ -21,10 +21,22 @@
   ],
   "recipient_terms": "Approved: unmodified Microsoft runtime licence, scoped only to runtime files; Inno LicenseFile added.",
   "component_probe": {
-    "tool": "Visual Studio Installer/vswhere.exe -all -products * -format json -utf8",
-    "instances": [],
-    "start_menu_shortcut": "Visual Studio Installer",
-    "observed_product": "Visual Studio Installer now exists; no registered Community product instance yet",
-    "desktop_permission_prompt": "Visual Studio Installer is requesting your permission; user hand-off requested; no automation of security prompt"
-  }
+    "product": "Visual Studio Community 2022",
+    "display_version": "17.14.42",
+    "installation_version": "17.14.37806.7",
+    "installation_path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+    "complete": true,
+    "launchable": true,
+    "prerelease": false,
+    "reboot_required": false,
+    "component_id_queries": {
+      "Microsoft.VisualStudio.Component.CoreEditor": true,
+      "Microsoft.Component.MSBuild": false,
+      "Microsoft.VisualStudio.Component.VC.Redist.14.Latest": false
+    },
+    "msbuild_executable_present": true,
+    "msbuild_version": "17.14.60.43110",
+    "interpretation": "Community product and owner licence acceptance established. Core Editor registered; MSBuild executable works although optional component ID is not registered. VC.Redist component absent; not required to redistribute the already inventoried release DLLs under Community section 4/list. No compiler workload was installed or required."
+  },
+  "licence_basis": "Owner accepted Community licence; approved MIT application uses eligible route. Redistribution list and recipient obligations remain documented in COMPLIANCE.md."
 }

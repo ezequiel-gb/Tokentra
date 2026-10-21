@@ -1,8 +1,8 @@
 # GitHub publication gate
 
 Publication remains on hold by the owner's current explicit instruction. MIT for Tokentra
-and community LGPLv3 for Qt are approved. Owner reports accepting free Visual Studio
-Community 2022 terms and approved Microsoft runtime terms during setup. See COMPLIANCE.md
+and community LGPLv3 for Qt are approved. Community 2022 17.14.42 and the actual Tokentra desktop upgrade are verified; the
+owner accepted Community terms and approved runtime terms were accepted during setup. See COMPLIANCE.md
 for the decision matrix, source-delivery conditions and outstanding package validation.
 A separate final publication authorisation is required even after technical clearance.
 
@@ -36,3 +36,9 @@ path, with no high-signal credential matches in 269 scanned text blobs. Current 
 use environment-variable notation. Keep historical local commits for investigation;
 public preparation must use a clean initial branch/current-tree archive rather than
 pushing those historical commits. No shared history was rewritten or force-pushed.
+
+The tested compliance installer is cleared for final publication authorisation under
+the documented delivery conditions. The owner has not authorised publication in
+this pass. Final v1.0 version/tag promotion, an exact final build and asset review
+remain part of a separately authorised release workflow. Do not infer publication
+authorisation from closing licensing or desktop verification checks.

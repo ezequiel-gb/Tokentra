@@ -1,4 +1,4 @@
-# Redistribution assessment — final validation pending
+# Redistribution assessment — Windows candidate verified; publication held
 
 21 October 2026; functional baseline **1.0.0-rc.3**. Publication remains on hold by
 owner instruction. This engineering assessment is not a formal legal opinion.
@@ -14,8 +14,8 @@ A recommended engineering test is not independently a legal obligation.
 | Component or issue | Applicable requirement | Evidence | Current status | Required action | Release blocker? |
 |---|---|---|---|---|---|
 | Tokentra | A: MIT notice and licence | Owner approval; root LICENSE | Resolved | Retain Copyright (c) 2026 Ezequiel Gomez | No |
-| Microsoft developer entitlement | A: Community 2022 §§1,4 and redistribution list | Owner reports installation and acceptance for approved MIT project; signed bootstrapper | Resolved subject to documented conditions | Retain owner attestation; reconcile actual installation path when accessible | Not solely because command tooling is invisible |
-| Microsoft recipients | A: Community §4(b) protective terms; §4(c) restrictions | Owner approved unmodified runtime licence during setup | Resolved subject to documented conditions | Retain scoped acceptance page; verify updated installer | Engineering release gate until new setup checked |
+| Microsoft developer entitlement | A: Community 2022 §§1,4 and redistribution list | Owner licence acceptance; independently verified Community 17.14.42, complete/launchable; MSBuild usable | Resolved subject to documented conditions | Retain MIT eligibility and Community/redistribution conditions | No identified entitlement gap remains |
+| Microsoft recipients | A: Community §4(b) protective terms; §4(c) restrictions | Approved scoped licence page observed in actual desktop wizard; Next disabled until acceptance; installed text matches approved input | Resolved | Preserve scoped acceptance in every installer | No; setup acceptance verified |
 | Qt/PySide/Shiboken | A: LGPLv3 §4(a,b,d1), GPLv3 §6 | External shared libraries; full notices; official wheel identity; complete source archives | Resolved subject to documented conditions | Deliver both source archives beside eventual binaries with equivalent access | Source delivery is a release condition |
 | Independent modified Qt build | B/C: replacement assurance | Dynamic build metadata; external files; no Qt hash/signature gate | Additional verification recommended | Optional independent build/replacement exercise | No clause requires performing a full rebuild |
 | Exact supplier Qt flags | B; A if necessary custom build scripts/patches are missing | Complete upstream sources contain build scripts; no Tokentra patches; official wheel bytes match | Additional verification recommended | Retain supplier flags if obtained; do not claim independent reproducibility | No missing custom script/patch identified |
@@ -23,7 +23,7 @@ A recommended engineering test is not independently a legal obligation.
 | Python native notices | A: PSF/historical, Apache, MIT, BSD/bzip2 | Actual versions/hashes; supplied Python licence; supplemental notices | Resolved subject to documented conditions | Retain all original and supplemental notices | No complete source archive obligation identified |
 | libffi/xz exact versions | B/C: provenance precision | ABI 8 and static liblzma; no supplier manifest; applicable licence families documented | Additional verification recommended | Obtain supplier manifest on runtime refresh; do not assign upstream default pins to custom binaries | No: MIT/public-domain/0BSD do not require full build histories |
 | Security | B: deployed attack-surface review | Advisory review below; plain-text input; fixed tokeniser regexes; no online service | Resolved subject to documented conditions | Recheck advisories before publication | No exploitable application input path established in this review |
-| Desktop installation | B: actual Settings visibility and lifecycle | Prior visible uninstall/reinstall evidence in INSTALLATION_DISCREPANCY.md | Resolved for exact previous candidate | Check new setup licence page/upgrade on actual desktop | Updated-installer engineering gate pending |
+| Desktop installation | B: actual Settings visibility and lifecycle | New exact-installer desktop upgrade, one Settings entry, 353 matching files, restart and installed offline check; previous visible uninstall/reinstall retained | Resolved | Retain exact evidence; repeat applicable checks after future binary changes | No; no unnecessary new uninstall cycle |
 | Publication | Owner instruction | Explicit hold in current request | Unresolved mandatory requirement | Separate final publication authorisation after gates pass | Yes; no public action in this pass |
 
 ## Microsoft runtime: files and no-cost deployment options
@@ -75,17 +75,28 @@ or compilers would be disproportionate. The [Build Tools terms](https://visualst
 §1(d) permit certain open-source dependency builds without a Visual Studio licence,
 but that is not itself Community §4 redistribution permission.
 
-The signed official Community bootstrapper is downloaded. Owner reports completing
-installation and accepting the licence, while command views initially cannot locate
-vswhere or Community in standard Program Files locations. Visual Studio Installer later became visible, but vswhere returned no installed product
-instances; the supplied Start menu shortcut targets Installer itself, not Community.
-A desktop security permission prompt for Installer requires owner action. Community
-component verification is incomplete (community-components.json). The command token lacks
-administrator rights. This is not disproof of owner licence acceptance, but neither
-the bootstrapper nor Installer alone is treated as verified product entitlement.
-No UAC/security changes were attempted. Preserve evidence separately in
-`docs/compliance/microsoft-entitlement.json`; verify the exact owner-reported path
-when accessible rather than reopening the resolved desktop registry investigation.
+The owner completed Community 2022 installation and accepted its terms. A new
+`vswhere` probe independently confirms **17.14.42**, installation version
+17.14.37806.7, complete/launchable/non-prerelease, no reboot required, at the
+supplied standard Community directory. Core Editor is registered. MSBuild
+17.14.60.43110 is present and successfully ran the installed-package offline check.
+The optional `Microsoft.Component.MSBuild` and `VC.Redist.14.Latest` component-ID
+queries are false; this does not negate the working MSBuild executable or the
+valid Community product. A C++ compiler/redist workload is not a separate condition
+in Community §4 for distributing the already inventoried release runtime files.
+No replacement DLL download, paid licence or full C++ workload is needed here.
+`community-components.json` records these distinctions rather than claiming all
+requested component IDs were installed.
+
+The initially absent product/permission prompt is resolved. No security prompt was
+automated; the owner handled it. The exact approved installer was then launched
+through File Explorer. The actual wizard displayed the approved Microsoft-only
+terms, with Next disabled until acceptance. Its accessibility document matches the
+approved input after whitespace normalisation. The upgrade completed; Windows
+Settings shows exactly one Tokentra RC3 entry and an enabled Uninstall action.
+All 353 payload files match, the registered shortcut works, and installed offline
+checks pass with empty caches. See desktop-upgrade.json and the genuine local
+screenshots. This is desktop evidence, not a command-registry-only inference.
 
 ## Qt/PySide6 LGPLv3 route
 
@@ -186,9 +197,22 @@ user-supplied regex patterns are implemented; imports are plain text.
   Specific Rust version findings are retained in security-review.json. The incomplete
   supplier lockfile limits exhaustive automated Rust auditing; do not claim one ran.
 
-Existing actual desktop uninstall/reinstall and Settings evidence remains valid for
-its exact installer. New licence/setup changes need updated payload/offline checks
-and visible licence-page/upgrade verification, not repeated destructive cycles.
+The new compliance installer passed actual desktop upgrade/licence-page/Settings
+and installed payload/offline checks. Prior actual desktop uninstall/reinstall
+evidence remains valid for its exact earlier installer; that destructive cycle was
+not unnecessarily repeated for licence-only changes.
 Do not substitute command registry observations for desktop verification. No clean
 VM, physically disconnected test or process-wide packet capture is claimed.
 No final v1.0 tag, public release, push or asset upload is authorised by this assessment.
+
+## Current decision
+
+All identified mandatory redistribution requirements have documented resolutions
+for the tested Windows candidate. No unresolved owner licensing decision remains.
+This is a reasoned release-engineering assessment, not a legal-compliance certificate.
+The setup-only candidate is ready for final publication authorisation, **subject to
+actual delivery of the retained complete Qt/PySide source archives and notices with
+any authorised binary download**, retention of the Microsoft acceptance page, and
+ordinary final version/tag/asset review. Publication remains expressly on hold.
+A future portable binary still needs an equivalent Microsoft recipient-acceptance
+arrangement and is not approved merely by this installer result.

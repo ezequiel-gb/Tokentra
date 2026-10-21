@@ -9,7 +9,7 @@ The approved reference is [Tokentra_Product_Specification.md](Tokentra_Product_S
 
 ## Status and platform support
 
-The approved application baseline is **1.0.0-rc.3**. Public distribution remains on hold pending final validation and separate owner authorisation; no final v1.0 download is available. Windows 11 x64 is the tested platform. macOS and Linux share the
+The approved application baseline is **1.0.0-rc.3**. Public distribution remains on hold pending separate final owner authorisation; no final v1.0 download is available. Windows 11 x64 is the tested platform. macOS and Linux share the
 source and have native packaging configurations, but their builds have not been validated here.
 See the [current release-readiness report](docs/RELEASE_READINESS.md) for evidence, remaining checks and the publication decision.
 No public repository or release has been created by this work. See [redistribution gates](docs/COMPLIANCE.md).
@@ -200,9 +200,9 @@ It never calls the URL-backed tiktoken registry. Missing or damaged assets cause
   passed at Qt scale factors 1, 1.25, 1.5 and 2. Actual OS scaling changes, manual dragging/snapping, multiple monitors,
   external-monitor disconnection and assistive technologies still need physical desktop testing.
 - Active tokenisation is allowed to finish on close; the event loop remains running while it finishes. There is no unsafe cancellation.
-- Publication remains on hold. Community licensing is owner-attested, scoped runtime terms and native/Rust notices are prepared,
-  and LGPL source/replacement arrangements are documented. Final installer validation and separate publication authorisation
-  are required. Residual provenance/rebuild recommendations are distinguished from licence obligations in [COMPLIANCE.md](docs/COMPLIANCE.md).
+- Publication remains on hold. Community licensing is supported by owner acceptance and a verified Community installation. Scoped runtime terms,
+  native/Rust notices and LGPL source/replacement arrangements are prepared; the actual desktop upgrade is verified.
+  Separate publication authorisation and documented companion-source delivery remain required. Residual provenance/rebuild recommendations are distinguished from licence obligations in [COMPLIANCE.md](docs/COMPLIANCE.md).
 
 ## Licence and publication
 
@@ -210,5 +210,5 @@ Tokentra is licensed under the [MIT licence](LICENSE), Copyright (c) 2026 Ezequi
 Third-party software retains its own terms; the owner selected community LGPLv3 for Qt/PySide6.
 The application licence does not discharge those obligations. See [third-party notices](THIRD_PARTY_NOTICES.md)
 and the [compliance assessment](docs/COMPLIANCE.md). The owner explicitly requested that publication remain
-on hold through final validation and a separate publication-authorisation step. The owner reports accepting
-Visual Studio Community 2022 terms and approved the Microsoft runtime licence page during setup.
+on hold through final validation and a separate publication-authorisation step. Community 2022 17.14.42 is independently verified and the owner accepted its terms.
+The approved scoped Microsoft runtime licence page and actual desktop upgrade are verified.

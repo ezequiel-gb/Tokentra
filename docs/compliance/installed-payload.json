@@ -1,0 +1,8 @@
+{
+  "payload_files_checked": 353,
+  "mismatches": [],
+  "exe_sha256": "0741bc3cb5169b9a8a7cdbd7d373a324798c0a3fb33d320142ff9afb9238f7a4",
+  "uninstaller_present": true,
+  "installed_directory": "%LOCALAPPDATA%/Programs/Tokentra",
+  "scope": "File integrity only; desktop registration requires independent Windows Settings observation."
+}
