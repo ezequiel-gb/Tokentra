@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "file_count": 353,
+  "payload_bytes": 83412896,
+  "gui_subsystem": true,
+  "encodings_verified": [
+    "o200k_base",
+    "cl100k_base",
+    "p50k_base"
+  ],
+  "frozen_modules": 203,
+  "module_filenames_checked": 202,
+  "source_path_leaks": 0,
+  "issues": [],
+  "python_runtime_dlls_match": {
+    "libcrypto-3-x64.dll": true,
+    "libssl-3-x64.dll": true,
+    "libffi-8.dll": true
+  },
+  "scope": "Payload paths/data and frozen code filenames; not a formal secret scan or licence certification"
+}

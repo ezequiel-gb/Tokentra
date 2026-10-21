@@ -1,0 +1,26 @@
+[
+  {
+    "name": "PySide6-Essentials",
+    "version": "6.12.0",
+    "filename": "pyside6_essentials-6.12.0-cp310-abi3-win_amd64.whl",
+    "url": "https://files.pythonhosted.org/packages/03/61/9a7e32a37b224f68506785bfb0f288d516098ec71681782d72b695a6c95d/pyside6_essentials-6.12.0-cp310-abi3-win_amd64.whl",
+    "sha256": "c9a95102aa23c1f86516a30d5a9be37552d324eee7e567eb7508973f1218cb42",
+    "verification": "Matches digest returned by PyPI HTTPS JSON API"
+  },
+  {
+    "name": "shiboken6",
+    "version": "6.12.0",
+    "filename": "shiboken6-6.12.0-cp310-abi3-win_amd64.whl",
+    "url": "https://files.pythonhosted.org/packages/2a/b6/bee97e7a2edeab72aafabb46ee5adc939790a638d107860b4cad7a20e407/shiboken6-6.12.0-cp310-abi3-win_amd64.whl",
+    "sha256": "a1906cb8116869178c64b6bab52623bbc8b4ceed7b30bfc3c9aa0f6e67f6438e",
+    "verification": "Matches digest returned by PyPI HTTPS JSON API"
+  },
+  {
+    "name": "tiktoken",
+    "version": "0.14.0",
+    "filename": "tiktoken-0.14.0.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/66/62/167a842aa0429d45f5e797354fd4343a96f6043d67d0513c675c7b8d36e6/tiktoken-0.14.0.tar.gz",
+    "sha256": "231dec90efcdccf1b565a1416107736f1e09b1a08fe736ef9d6363e626d03874",
+    "verification": "Matches digest returned by PyPI HTTPS JSON API"
+  }
+]

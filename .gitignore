@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+build*/
+dist/
+dist-*/
+*.egg-info/
+*.pyc
+.test-tmp*/
+.verification-tmp/
+releases/
+.recovery/
+.tools/
+.publication/
+release-*/
+!docs/release-audit/
+!docs/release-audit/*.json

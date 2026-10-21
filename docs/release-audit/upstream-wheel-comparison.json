@@ -1,0 +1,12 @@
+[
+  {
+    "distribution": "PySide6-Essentials",
+    "binaries_checked": 228,
+    "mismatches": []
+  },
+  {
+    "distribution": "shiboken6",
+    "binaries_checked": 12,
+    "mismatches": []
+  }
+]

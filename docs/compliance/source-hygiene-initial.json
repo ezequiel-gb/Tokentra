@@ -1,0 +1,12 @@
+{
+  "status": "review required",
+  "files": 389,
+  "findings": [
+    {
+      "path": "docs/INSTALLATION_DISCREPANCY.md",
+      "kind": "local_user_path"
+    }
+  ],
+  "scope": "Allowlisted source and high-signal pattern scan; not a comprehensive secret/vulnerability certification",
+  "history": "No Git repository existed in supplied workspace; curated initial history must be reviewed before publication"
+}

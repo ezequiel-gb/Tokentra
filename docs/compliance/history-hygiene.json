@@ -1,0 +1,18 @@
+{
+  "scope": "High-signal text scan of reachable curated local Git blobs, not an exhaustive secret certification",
+  "blobs_scanned": 269,
+  "findings": [
+    {
+      "path": "docs/INSTALLATION_DISCREPANCY.md",
+      "blob": "e70c539f1d3f226dbe0a9f379010575f6780acc2",
+      "kind": "local_user_path"
+    },
+    {
+      "path": "docs/INSTALLATION_DISCREPANCY.md",
+      "blob": "9c198ccaf1a684980a3d42a62c287fd19d1a6b65",
+      "kind": "local_user_path"
+    }
+  ],
+  "status": "historical local paths present; no credential signatures found",
+  "action": "Current source path corrected using environment-variable notation. Preserve local history; do not publish historical commits without review. Reviewed source archive contains current tree only."
+}

@@ -1,0 +1,67 @@
+{
+  "review_date": "2026-10-21",
+  "findings": [
+    {
+      "component": "pyo3",
+      "version": "0.29.2",
+      "advisory": "RUSTSEC-2026-0177",
+      "patched": ">=0.29.0",
+      "status": "deployed version outside affected range",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0177.html"
+    },
+    {
+      "component": "pyo3",
+      "version": "0.29.2",
+      "advisory": "RUSTSEC-2026-0176",
+      "patched": ">=0.29.0",
+      "status": "deployed version outside affected range",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0176.html"
+    },
+    {
+      "component": "pyo3",
+      "version": "0.29.2",
+      "advisory": "RUSTSEC-2026-0013",
+      "patched": ">=0.28.2",
+      "status": "deployed version outside affected range",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0013.html"
+    },
+    {
+      "component": "hashbrown",
+      "version": "0.17.1",
+      "advisory": "RUSTSEC-2024-0402",
+      "patched": ">=0.15.1",
+      "status": "deployed version outside affected range; no Borsh app feature",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2024-0402.html"
+    },
+    {
+      "component": "Qt",
+      "version": "6.12.0",
+      "advisories": [
+        "CVE-2026-96432",
+        "CVE-2026-101201",
+        "CVE-2026-105923"
+      ],
+      "status": "published affected ranges end before deployed version; see COMPLIANCE.md for individual authoritative URLs"
+    },
+    {
+      "component": "Python",
+      "version": "3.12.14",
+      "status": "3.12.15 has later security fixes; TLS/archive/URL/StringPrep/extreme-format paths not application user-input features; patched 3.12 refresh recommended",
+      "url": "https://www.python.org/downloads/release/python-31215/"
+    },
+    {
+      "component": "Expat",
+      "version": "2.8.3",
+      "advisory": "CVE-2026-93990",
+      "status": "later 2.8.5 fix; no imported-XML parsing in Tokentra; refresh with Python recommended",
+      "url": "https://blog.hartwork.org/posts/expat-2-8-5-released/"
+    },
+    {
+      "component": "OpenSSL",
+      "version": "3.5.8",
+      "status": "3.5.9 fixes TLS/QUIC/CRL/specialised crypto; no such service or untrusted certificate processing exposed by Tokentra; SHA256 asset checks remain",
+      "url": "https://openssl-library.org/news/openssl-3.5-notes/"
+    }
+  ],
+  "scope": "Targeted upstream advisory review and application input paths; not exhaustive vulnerability absence proof or cargo-audit (no supplier wheel lockfile). No dependency upgrade or core code change made."
+}

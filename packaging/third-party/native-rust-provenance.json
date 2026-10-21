@@ -1,0 +1,315 @@
+{
+  "rust_compiler_commit": "8bab26f4f68e0e26f0bb7960be334d5b520ea452",
+  "rust_compiler": "1.97.1",
+  "rust_standard_library_archive_sha256": "0119e2788f3391a891b2e0fe611e82b433670eeae76c45995b081d0ac7715c6d",
+  "rust_standard_library_url": "https://static.rust-lang.org/dist/rustc-1.97.1-x86_64-pc-windows-msvc.tar.xz",
+  "rust_components": [
+    {
+      "name": "aho-corasick",
+      "version": "1.1.5",
+      "license": "Unlicense OR MIT",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/aho-corasick/aho-corasick-1.1.5.crate",
+      "sha256": "c982642fa9e8606056828ee9a8505737230110bb1099153c79efe865c59d12ba",
+      "notices": [
+        "rust-crates/aho-corasick-1.1.5/COPYING",
+        "rust-crates/aho-corasick-1.1.5/LICENSE-MIT",
+        "rust-crates/aho-corasick-1.1.5/UNLICENSE"
+      ]
+    },
+    {
+      "name": "bit-set",
+      "version": "0.8.0",
+      "license": "Apache-2.0 OR MIT",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/bit-set/bit-set-0.8.0.crate",
+      "sha256": "08807e080ed7f9d5433fa9b275196cfc35414f66a0c79d864dc51a0d825231a3",
+      "notices": [
+        "rust-crates/bit-set-0.8.0/LICENSE-APACHE",
+        "rust-crates/bit-set-0.8.0/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "bit-vec",
+      "version": "0.8.0",
+      "license": "Apache-2.0 OR MIT",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/bit-vec/bit-vec-0.8.0.crate",
+      "sha256": "5e764a1d40d510daf35e07be9eb06e75770908c27d411ee6c92109c9840eaaf7",
+      "notices": [
+        "rust-crates/bit-vec-0.8.0/LICENSE-APACHE",
+        "rust-crates/bit-vec-0.8.0/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "bstr",
+      "version": "1.13.1",
+      "license": "MIT OR Apache-2.0",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/bstr/bstr-1.13.1.crate",
+      "sha256": "6bb31b46c14244e20ee9984b11bf5c992b91fb6939fea616e3512c8baecdbe5f",
+      "notices": [
+        "rust-crates/bstr-1.13.1/COPYING",
+        "rust-crates/bstr-1.13.1/LICENSE-APACHE",
+        "rust-crates/bstr-1.13.1/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "fancy-regex",
+      "version": "0.19.0",
+      "license": "MIT",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/fancy-regex/fancy-regex-0.19.0.crate",
+      "sha256": "476de73bddf2ef8490aa4ee8f1cf40b430bf1d56c48c22080e5186952cd580e6",
+      "notices": [
+        "rust-crates/fancy-regex-0.19.0/LICENSE"
+      ]
+    },
+    {
+      "name": "hashbrown",
+      "version": "0.17.1",
+      "license": "MIT OR Apache-2.0",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.17.1.crate",
+      "sha256": "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a",
+      "notices": [
+        "rust-crates/hashbrown-0.17.1/LICENSE-APACHE",
+        "rust-crates/hashbrown-0.17.1/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "libc",
+      "version": "0.2.186",
+      "license": "MIT OR Apache-2.0",
+      "evidence": "supplemental notice; exact binary version unestablished",
+      "url": "https://static.crates.io/crates/libc/libc-0.2.186.crate",
+      "sha256": "68ab91017fe16c622486840e4c83c9a37afeff978bd239b5293d61ece587de66",
+      "notices": [
+        "rust-crates/libc-0.2.186/LICENSE-APACHE",
+        "rust-crates/libc-0.2.186/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "memchr",
+      "version": "2.8.3",
+      "license": "Unlicense OR MIT",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/memchr/memchr-2.8.3.crate",
+      "sha256": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98",
+      "notices": [
+        "rust-crates/memchr-2.8.3/COPYING",
+        "rust-crates/memchr-2.8.3/LICENSE-MIT",
+        "rust-crates/memchr-2.8.3/UNLICENSE"
+      ]
+    },
+    {
+      "name": "once_cell",
+      "version": "1.21.4",
+      "license": "MIT OR Apache-2.0",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/once_cell/once_cell-1.21.4.crate",
+      "sha256": "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50",
+      "notices": [
+        "rust-crates/once_cell-1.21.4/LICENSE-APACHE",
+        "rust-crates/once_cell-1.21.4/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "pyo3",
+      "version": "0.29.2",
+      "license": "MIT OR Apache-2.0",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/pyo3/pyo3-0.29.2.crate",
+      "sha256": "4688ddedf473e32662b9b067670129a8afb8c18e351482c70d62ba4a88171e8b",
+      "notices": [
+        "rust-crates/pyo3-0.29.2/LICENSE-APACHE",
+        "rust-crates/pyo3-0.29.2/LICENSE-MIT",
+        "rust-crates/pyo3-0.29.2/pyo3-runtime/LICENSE-APACHE",
+        "rust-crates/pyo3-0.29.2/pyo3-runtime/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "pyo3-ffi",
+      "version": "0.29.2",
+      "license": "MIT OR Apache-2.0",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/pyo3-ffi/pyo3-ffi-0.29.2.crate",
+      "sha256": "e591a95526fead067432c3b3a33fc74770b87b1e04e73671090d9c2055a2b327",
+      "notices": [
+        "rust-crates/pyo3-ffi-0.29.2/LICENSE-APACHE",
+        "rust-crates/pyo3-ffi-0.29.2/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "regex",
+      "version": "1.13.1",
+      "license": "MIT OR Apache-2.0",
+      "evidence": "supplemental notice superset; NOT exact binary version evidence",
+      "url": "https://static.crates.io/crates/regex/regex-1.13.1.crate",
+      "sha256": "f020237b6c8eed93db2e2cb53c00c60a8e1bc73da7d073199a1180401450218d",
+      "notices": [
+        "rust-crates/regex-1.13.1/LICENSE-APACHE",
+        "rust-crates/regex-1.13.1/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "regex-automata",
+      "version": "0.4.18",
+      "license": "MIT OR Apache-2.0",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/regex-automata/regex-automata-0.4.18.crate",
+      "sha256": "ad8553b9b26413251cbf30e620595c7a41b3887f03da04579c0e6b0d6a06b4b2",
+      "notices": [
+        "rust-crates/regex-automata-0.4.18/LICENSE-APACHE",
+        "rust-crates/regex-automata-0.4.18/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "regex-syntax",
+      "version": "0.8.11",
+      "license": "MIT OR Apache-2.0",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/regex-syntax/regex-syntax-0.8.11.crate",
+      "sha256": "d6f6ff9a378485b298a5286656da665ba74413d36db0979633275d2e708145d4",
+      "notices": [
+        "rust-crates/regex-syntax-0.8.11/LICENSE-APACHE",
+        "rust-crates/regex-syntax-0.8.11/LICENSE-MIT",
+        "rust-crates/regex-syntax-0.8.11/src/unicode_tables/LICENSE-UNICODE"
+      ]
+    },
+    {
+      "name": "rustc-demangle",
+      "version": "0.1.27",
+      "license": "MIT/Apache-2.0",
+      "evidence": "binary panic/source path",
+      "url": "https://static.crates.io/crates/rustc-demangle/rustc-demangle-0.1.27.crate",
+      "sha256": "b50b8869d9fc858ce7266cce0194bd74df58b9d0e3f6df3a9fc8eb470d95c09d",
+      "notices": [
+        "rust-crates/rustc-demangle-0.1.27/LICENSE-APACHE",
+        "rust-crates/rustc-demangle-0.1.27/LICENSE-MIT"
+      ]
+    },
+    {
+      "name": "rustc-hash",
+      "version": "2.1.1",
+      "license": "Apache-2.0 OR MIT",
+      "evidence": "supplemental notice superset; NOT exact binary version evidence",
+      "url": "https://static.crates.io/crates/rustc-hash/rustc-hash-2.1.1.crate",
+      "sha256": "357703d41365b4b27c590e3ed91eabb1b663f07c4c084095e60cbed4362dff0d",
+      "notices": [
+        "rust-crates/rustc-hash-2.1.1/LICENSE-APACHE",
+        "rust-crates/rustc-hash-2.1.1/LICENSE-MIT"
+      ]
+    }
+  ],
+  "scope": "Binary-evidenced crates plus labelled permissive notice superset; not a complete supplier lockfile or independently reproduced wheel",
+  "native_notice_files": [
+    {
+      "path": "python-native/expat-COPYING.txt",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+    },
+    {
+      "path": "python-native/libffi-latest-LICENSE.txt",
+      "sha256": "d5699fa516968e3a1550e6c902b7441c78856f2603d61bedd0b0662a26655366"
+    },
+    {
+      "path": "python-native/libffi-LICENSE.txt",
+      "sha256": "2c9c2acb9743e6b007b91350475308aee44691d96aa20eacef8e199988c8c388"
+    },
+    {
+      "path": "python-native/mpdecimal-COPYRIGHT.txt",
+      "sha256": "085ad39180c99bcd045c86d9bbc4e147a64e5a6b4c58d98f65f0c446e755ad4e"
+    },
+    {
+      "path": "python-native/openssl-LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "python-native/python-3.12.14-license.rst",
+      "sha256": "341832873fd316a37927e79385093fbbfd40a467428480835fe435a80cadf4e5"
+    },
+    {
+      "path": "python-native/xz-5.2.5-COPYING.txt",
+      "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c"
+    },
+    {
+      "path": "python-native/xz-5.8.1-COPYING.0BSD.txt",
+      "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1"
+    },
+    {
+      "path": "python-native/xz-5.8.1-COPYING.txt",
+      "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8"
+    },
+    {
+      "path": "python-native/zlib-LICENSE.txt",
+      "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+    }
+  ],
+  "native_source_downloads": [
+    {
+      "name": "openssl-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.5.8/LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "name": "zlib-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/madler/zlib/v1.3.2/LICENSE",
+      "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+    },
+    {
+      "name": "expat-COPYING.txt",
+      "url": "https://raw.githubusercontent.com/libexpat/libexpat/R_2_8_3/expat/COPYING",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+    },
+    {
+      "name": "libffi-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/libffi/libffi/v3.4.4/LICENSE",
+      "sha256": "2c9c2acb9743e6b007b91350475308aee44691d96aa20eacef8e199988c8c388"
+    },
+    {
+      "name": "xz-5.2.5-COPYING.txt",
+      "url": "https://raw.githubusercontent.com/tukaani-project/xz/v5.2.5/COPYING",
+      "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c"
+    },
+    {
+      "name": "xz-5.8.1-COPYING.txt",
+      "url": "https://raw.githubusercontent.com/tukaani-project/xz/v5.8.1/COPYING",
+      "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8"
+    },
+    {
+      "name": "xz-5.8.1-COPYING.0BSD.txt",
+      "url": "https://raw.githubusercontent.com/tukaani-project/xz/v5.8.1/COPYING.0BSD",
+      "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1"
+    },
+    {
+      "name": "rust-LICENSE-MIT.txt",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/8bab26f4f68e0e26f0bb7960be334d5b520ea452/LICENSE-MIT",
+      "sha256": "b71bd43a069ca0641a9ecfe585ca7b3c53b5cc1608f8b68321168698e28b5ea1"
+    },
+    {
+      "name": "rust-LICENSE-APACHE.txt",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/8bab26f4f68e0e26f0bb7960be334d5b520ea452/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "name": "rust-COPYRIGHT.txt",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/8bab26f4f68e0e26f0bb7960be334d5b520ea452/COPYRIGHT",
+      "sha256": "172020dbfd5b53a226dfde77616190a48dcff519b0bc0e6deb91a8450782c4af"
+    },
+    {
+      "name": "mpdecimal-header.h",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.12.14/Modules/_decimal/libmpdec/mpdecimal.h",
+      "sha256": "ea0b9c6b296c13aed6ecaa50b463e39a9c1bdc059b84f50507fd8247b2e660f9"
+    },
+    {
+      "name": "python-3.12.14-license.rst",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.12.14/Doc/license.rst",
+      "sha256": "341832873fd316a37927e79385093fbbfd40a467428480835fe435a80cadf4e5"
+    },
+    {
+      "name": "libffi-latest-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/libffi/libffi/v3.5.2/LICENSE",
+      "sha256": "d5699fa516968e3a1550e6c902b7441c78856f2603d61bedd0b0662a26655366"
+    }
+  ]
+}

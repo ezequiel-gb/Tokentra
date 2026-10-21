@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "samples": 56,
+  "observed_endpoints": [],
+  "inspection_errors": [],
+  "offline_diagnostic": {
+    "status": "passed",
+    "network": "Python socket connections and DNS denied",
+    "encodings": {
+      "o200k_base": 6,
+      "cl100k_base": 8,
+      "p50k_base": 11
+    },
+    "gui_startup": true,
+    "imported_file": true,
+    "gui_encoding_switches": true,
+    "planning": true,
+    "persisted_keys": [
+      "additional_allowance",
+      "context_capacity",
+      "encoding",
+      "geometry",
+      "mode"
+    ]
+  },
+  "scope": "Process/child TCP and UDP endpoint sampling during explicit synthetic offline diagnostic; Python socket/DNS audit, empty cache, external cwd, developer PATH removed. Not physical disconnection, packet capture, clean-machine validation or proof of no transient network activity."
+}

@@ -1,0 +1,715 @@
+{
+  "status": "passed",
+  "platform": "windows",
+  "records": [
+    {
+      "event": "Move",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Resize",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "case": "first-launch",
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "available": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "device_pixel_ratio": 2.0
+    },
+    {
+      "event": "WindowStateChange",
+      "state": 2,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Resize",
+      "state": 2,
+      "client": [
+        0,
+        32,
+        640,
+        373
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        389
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Move",
+      "state": 2,
+      "client": [
+        0,
+        28,
+        640,
+        373
+      ],
+      "frame": [
+        0,
+        12,
+        640,
+        389
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "case": "maximised",
+      "frame": [
+        0,
+        12,
+        640,
+        389
+      ],
+      "client": [
+        0,
+        28,
+        640,
+        373
+      ],
+      "available": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "native_bounds": {
+        "visible_physical": [
+          0,
+          32,
+          1280,
+          800
+        ],
+        "work_physical": [
+          0,
+          32,
+          1280,
+          800
+        ],
+        "contained": true
+      }
+    },
+    {
+      "event": "WindowStateChange",
+      "state": 0,
+      "client": [
+        0,
+        28,
+        640,
+        373
+      ],
+      "frame": [
+        0,
+        12,
+        640,
+        389
+      ],
+      "normal": [
+        0,
+        28,
+        640,
+        373
+      ]
+    },
+    {
+      "event": "Move",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Resize",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "case": "restored",
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "available": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "device_pixel_ratio": 2.0
+    },
+    {
+      "event": "WindowStateChange",
+      "state": 1,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "WindowStateChange",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "case": "reopened",
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "available": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "device_pixel_ratio": 2.0
+    },
+    {
+      "event": "Resize",
+      "state": 4,
+      "client": [
+        0,
+        32,
+        640,
+        400
+      ],
+      "frame": [
+        4,
+        32,
+        632,
+        396
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Move",
+      "state": 4,
+      "client": [
+        0,
+        0,
+        640,
+        400
+      ],
+      "frame": [
+        4,
+        0,
+        632,
+        396
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "WindowStateChange",
+      "state": 4,
+      "client": [
+        0,
+        0,
+        640,
+        400
+      ],
+      "frame": [
+        4,
+        0,
+        632,
+        396
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Resize",
+      "state": 0,
+      "client": [
+        0,
+        0,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        -16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        0,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Move",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "WindowStateChange",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "case": "left-fullscreen",
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "available": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "device_pixel_ratio": 2.0
+    },
+    {
+      "case": "resized",
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "available": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "device_pixel_ratio": 2.0
+    },
+    {
+      "event": "Move",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Resize",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "case": "valid-saved",
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "available": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "device_pixel_ratio": 2.0
+    },
+    {
+      "event": "Move",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Resize",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "case": "invalid-saved",
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "available": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "device_pixel_ratio": 2.0
+    },
+    {
+      "event": "Move",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Resize",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "case": "oversized-saved",
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "available": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "device_pixel_ratio": 2.0
+    },
+    {
+      "event": "Move",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "event": "Resize",
+      "state": 0,
+      "client": [
+        0,
+        32,
+        640,
+        368
+      ],
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "normal": [
+        0,
+        32,
+        640,
+        368
+      ]
+    },
+    {
+      "case": "corrupt-saved",
+      "frame": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "available": [
+        0,
+        16,
+        640,
+        384
+      ],
+      "device_pixel_ratio": 2.0
+    }
+  ],
+  "scope": "Programmatic native Qt transitions; not physical monitor/scaling reconfiguration or manual dragging"
+}

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+# Preserve the exact upstream bytes verified by the tokenizer manifest.
+*.tiktoken -text
+*.png binary
+*.ico binary
+*.zip binary

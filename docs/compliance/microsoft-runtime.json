@@ -1,0 +1,222 @@
+{
+  "files": [
+    {
+      "path": "_internal/VCRUNTIME140.dll",
+      "version": "14.44.35211.0",
+      "sha256": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066"
+    },
+    {
+      "path": "_internal/VCRUNTIME140_1.dll",
+      "version": "14.44.35211.0",
+      "sha256": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+    },
+    {
+      "path": "_internal/PySide6/MSVCP140.dll",
+      "version": "14.44.35211.0",
+      "sha256": "f6f1d55bfd64027820ddce48f9cd8cf46d53bfa34047e6acf4ef348d492a05cb"
+    },
+    {
+      "path": "_internal/PySide6/MSVCP140_1.dll",
+      "version": "14.44.35211.0",
+      "sha256": "2be87527c41e1ba8aff48e326e0adcd4743516e0bbcc9304986c726e27de6aca"
+    },
+    {
+      "path": "_internal/PySide6/MSVCP140_2.dll",
+      "version": "14.44.35211.0",
+      "sha256": "6a72ed8a87eae1671640bd1ca98eccb989f1772ae46ab84594e385bf6d4ac4fb"
+    },
+    {
+      "path": "_internal/PySide6/VCRUNTIME140.dll",
+      "version": "14.44.35211.0",
+      "sha256": "a36e0cb185eb89533ed96d4568138f86a1315756a8b2644c5963a8ce23e32101"
+    },
+    {
+      "path": "_internal/PySide6/VCRUNTIME140_1.dll",
+      "version": "14.44.35211.0",
+      "sha256": "302b1e160e858602490a55e32ae2e29ddfc0bec2a188e19550cb655cdaa58f9c"
+    },
+    {
+      "path": "_internal/shiboken6/MSVCP140.dll",
+      "version": "14.44.35211.0",
+      "sha256": "1ba4d7c0a95d375da138a057a57593b33510ad5bda6c5e2686afd68faa5b4231"
+    },
+    {
+      "path": "_internal/shiboken6/VCRUNTIME140.dll",
+      "version": "14.44.35211.0",
+      "sha256": "e7be9112ee9a5b9f44b44bff24cb761cca9b1ed7550b612f77b70edfcf5fdabf"
+    },
+    {
+      "path": "_internal/shiboken6/VCRUNTIME140_1.dll",
+      "version": "14.44.35211.0",
+      "sha256": "f02cd4a862b85a9a3153d27e15e5a213f5df8e3d77004ed2e87b8a7e8873d97c"
+    }
+  ],
+  "importers": {
+    "_internal/libcrypto-3-x64.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/libffi-8.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/libssl-3-x64.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/pyexpat.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/python312.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/select.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/unicodedata.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/VCRUNTIME140_1.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/_bz2.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/_ctypes.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/_decimal.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/_hashlib.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/_lzma.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/_multiprocessing.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/_queue.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/_socket.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/_ssl.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/MSVCP140.dll": [
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/PySide6/MSVCP140_1.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/MSVCP140_2.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/PySide6/pyside6.abi3.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/PySide6/Qt6Core.dll": [
+      "MSVCP140.dll",
+      "MSVCP140_1.dll",
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/PySide6/Qt6Gui.dll": [
+      "MSVCP140.dll",
+      "MSVCP140_1.dll",
+      "MSVCP140_2.dll",
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/PySide6/Qt6Network.dll": [
+      "MSVCP140.dll",
+      "MSVCP140_1.dll",
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/PySide6/Qt6OpenGL.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/Qt6Widgets.dll": [
+      "MSVCP140.dll",
+      "MSVCP140_1.dll",
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/PySide6/QtNetwork.pyd": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/PySide6/VCRUNTIME140_1.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/regex/_regex.cp312-win_amd64.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/shiboken6/MSVCP140.dll": [
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/shiboken6/Shiboken.pyd": [
+      "VCRUNTIME140_1.dll",
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/shiboken6/shiboken6.abi3.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/shiboken6/VCRUNTIME140_1.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/tiktoken/_tiktoken.cp312-win_amd64.pyd": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/plugins/generic/qtuiotouchplugin.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/plugins/imageformats/qico.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/plugins/networkinformation/qnetworklistmanager.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll"
+    ],
+    "_internal/PySide6/plugins/platforms/qminimal.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/plugins/platforms/qoffscreen.dll": [
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/plugins/platforms/qwindows.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140_1.dll",
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/plugins/styles/qmodernwindowsstyle.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/plugins/tls/qcertonlybackend.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/plugins/tls/qopensslbackend.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll"
+    ],
+    "_internal/PySide6/plugins/tls/qschannelbackend.dll": [
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll"
+    ]
+  }
+}

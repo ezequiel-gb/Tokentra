@@ -1,0 +1,7 @@
+{
+  "tool": "vswhere -all -products * -format json -utf8",
+  "instances": [],
+  "result": "Only Visual Studio Installer files and shortcut found. No installed Community instance returned at observation time.",
+  "desktop": "Visual Studio Installer security permission prompt observed; user must handle it.",
+  "owner_statement": "Community terms accepted and product reported installed; independent component verification remains incomplete."
+}

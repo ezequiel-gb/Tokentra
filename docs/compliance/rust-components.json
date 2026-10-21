@@ -1,0 +1,82 @@
+{
+  "binary": "dist-release-audit-clean/Tokentra/_internal/tiktoken/_tiktoken.cp312-win_amd64.pyd",
+  "compiler_commit": "8bab26f4f68e0e26f0bb7960be334d5b520ea452",
+  "compiler_version": "1.97.1",
+  "components": [
+    {
+      "name": "aho-corasick",
+      "version": "1.1.5",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "bit-set",
+      "version": "0.8.0",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "bit-vec",
+      "version": "0.8.0",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "bstr",
+      "version": "1.13.1",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "fancy-regex",
+      "version": "0.19.0",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "hashbrown",
+      "version": "0.17.1",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "memchr",
+      "version": "2.8.3",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "once_cell",
+      "version": "1.21.4",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "pyo3",
+      "version": "0.29.2",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "pyo3-ffi",
+      "version": "0.29.2",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "regex-automata",
+      "version": "0.4.18",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "regex-syntax",
+      "version": "0.8.11",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "rustc-demangle",
+      "version": "0.1.27",
+      "evidence": "binary panic/source path"
+    },
+    {
+      "name": "regex",
+      "version": "1.13.1",
+      "evidence": "supplemental notice superset; NOT exact binary version evidence"
+    },
+    {
+      "name": "rustc-hash",
+      "version": "2.1.1",
+      "evidence": "supplemental notice superset; NOT exact binary version evidence"
+    }
+  ]
+}

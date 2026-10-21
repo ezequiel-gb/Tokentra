@@ -1,0 +1,30 @@
+{
+  "bootstrapper_url": "https://aka.ms/vs/17/release/vs_community.exe",
+  "bootstrapper_sha256": "e38048c45811bed66da5315aa921573a0b01cadaeb5f82b3aa183b8ad497e58b",
+  "signature": "Valid, Microsoft Corporation",
+  "owner_authorization": "Owner reports Community 2022 installed with minimal configuration, licence terms accepted, and runtime licence during setup approved.",
+  "admin_token": false,
+  "installation_status": "Owner-attested installed; command and escalated command views cannot locate vswhere or standard Community directories; exact path requested. No claim of independent component verification.",
+  "terms": [
+    {
+      "name": "community",
+      "sha256": "41a207b10c8ab91d0d2f10a854715f73dca54509581692d2fe179aa3ffcb8540"
+    },
+    {
+      "name": "buildtools",
+      "sha256": "2f66b86a00e8d9833789897ce23d05a4a2dbea370cf39c8c1098dbc17d0e7bdc"
+    },
+    {
+      "name": "runtime",
+      "sha256": "f1e3d56ceb2ad68aae0711b910375009e651ac5530fa0760f0dea6e81e54fae1"
+    }
+  ],
+  "recipient_terms": "Approved: unmodified Microsoft runtime licence, scoped only to runtime files; Inno LicenseFile added.",
+  "component_probe": {
+    "tool": "Visual Studio Installer/vswhere.exe -all -products * -format json -utf8",
+    "instances": [],
+    "start_menu_shortcut": "Visual Studio Installer",
+    "observed_product": "Visual Studio Installer now exists; no registered Community product instance yet",
+    "desktop_permission_prompt": "Visual Studio Installer is requesting your permission; user hand-off requested; no automation of security prompt"
+  }
+}

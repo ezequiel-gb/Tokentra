@@ -1,0 +1,52 @@
+[
+  {
+    "File": "_internal\\VCRUNTIME140_1.dll",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  },
+  {
+    "File": "_internal\\VCRUNTIME140.dll",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  },
+  {
+    "File": "_internal\\PySide6\\MSVCP140_1.dll",
+    "Status": "Valid",
+    "Signer": "CN=The QT Company Oy, O=The QT Company Oy, L=Espoo, S=Uusimaa, C=FI, SERIALNUMBER=2637805-2, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.3=FI"
+  },
+  {
+    "File": "_internal\\PySide6\\MSVCP140_2.dll",
+    "Status": "Valid",
+    "Signer": "CN=The QT Company Oy, O=The QT Company Oy, L=Espoo, S=Uusimaa, C=FI, SERIALNUMBER=2637805-2, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.3=FI"
+  },
+  {
+    "File": "_internal\\PySide6\\MSVCP140.dll",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  },
+  {
+    "File": "_internal\\PySide6\\VCRUNTIME140_1.dll",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  },
+  {
+    "File": "_internal\\PySide6\\VCRUNTIME140.dll",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  },
+  {
+    "File": "_internal\\shiboken6\\MSVCP140.dll",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  },
+  {
+    "File": "_internal\\shiboken6\\VCRUNTIME140_1.dll",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  },
+  {
+    "File": "_internal\\shiboken6\\VCRUNTIME140.dll",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  }
+]
