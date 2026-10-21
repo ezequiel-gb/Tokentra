@@ -1,12 +1,14 @@
 # Changelog
 
-## Unreleased redistribution audit
+## 1.0.0 — Windows
 
 - Record owner-approved MIT licence and community LGPLv3 route.
-- Expand third-party notices/source evidence and document unresolved publication gates.
+- Include third-party notices, source evidence and Qt library replacement guidance.
 - Correct OpenSSL/UCRT developer-PATH contamination in Windows packaging.
-- Preserve RC3 app/UI; prepare a curated local Git checkpoint and audit installer only.
-- Keep public publication blocked per owner: Microsoft runtime entitlement unconfirmed.
+- Preserve RC3 application/UI and stable installer upgrade identity.
+- Verify Community entitlement and present scoped Microsoft recipient terms during setup.
+- Promote consistent application, executable and installer metadata to 1.0.0.
+- Prepare the clean source history and companion Qt/PySide source delivery.
 
 ## 1.0.0-rc.3, local UI refinement candidate
 

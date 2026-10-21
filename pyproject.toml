@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tokentra"
-version = "1.0.0rc3"
+version = "1.0.0"
 description = "Precision Token Counter: private, offline OpenAI text token counting"
 requires-python = ">=3.11"
 license = "MIT"

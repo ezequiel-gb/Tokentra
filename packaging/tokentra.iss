@@ -1,16 +1,16 @@
 ; One maintained per-user installer definition. ISCC 6.7.3 is the tested compiler.
 ; Owner-approved application copyright holder; no code-signing identity is claimed.
 #ifndef AppRelease
-  #define AppRelease "1.0.0-rc.3"
+  #define AppRelease "1.0.0"
 #endif
 #ifndef AppNumericVersion
-  #define AppNumericVersion "1.0.0.3"
+  #define AppNumericVersion "1.0.0.0"
 #endif
 #ifndef PayloadDir
-  #define PayloadDir "..\dist-rc3\Tokentra"
+  #define PayloadDir "..\dist-final\Tokentra"
 #endif
 #ifndef InstallerOutput
-  #define InstallerOutput "..\release-rc3"
+  #define InstallerOutput "..\release-final"
 #endif
 #ifndef InstallerBaseName
   #define InstallerBaseName "Tokentra-" + AppRelease + "-windows-x64-setup"

@@ -1,44 +1,32 @@
-# GitHub publication gate
+# Public Windows release procedure
 
-Publication remains on hold by the owner's current explicit instruction. MIT for Tokentra
-and community LGPLv3 for Qt are approved. Community 2022 17.14.42 and the actual Tokentra desktop upgrade are verified; the
-owner accepted Community terms and approved runtime terms were accepted during setup. See COMPLIANCE.md
-for the decision matrix, source-delivery conditions and outstanding package validation.
-A separate final publication authorisation is required even after technical clearance.
+The owner explicitly authorises Tokentra 1.0.0 publication after final gates pass.
+MIT is approved; Community 2022 entitlement, scoped Microsoft recipient acceptance,
+LGPL notices and dynamic replacement arrangements are documented in COMPLIANCE.md.
 
-Read-only authenticated GitHub inspection found account ezequiel-gb and no Tokentra
-repository in that account. No repository, remote, public push or release was created.
+## Canonical history
 
-Prepared repository name: Tokentra
-Description: Offline OpenAI token counting and context planning for Windows.
+Use the clean `publication-preparation` lineage beginning at
+`152773ce89f497b8ce44dd4d81295d05181ce109`, followed by
+`c4fea80e688d806f98460cc359c8937f5a79b01b` and the final version-promotion commit.
+The unrelated private historical `main` branch must remain local. Push only the
+reviewed publication branch to remote `main`; never push `--all` or rewrite remote history.
 
-There was no Git repository/history in the supplied workspace. A curated local source
-checkpoint is prepared under the ignored .publication directory, excluding caches, tools,
-virtual environments, historical private diagnostics and binary build artefacts. Its
-first commit is a preparation checkpoint, not a final release tag.
+Build from the clean committed source. Record that commit in the build manifest;
+tag `v1.0.0` at that exact commit after tests, package audit and desktop upgrade pass.
+Later evidence-only documentation commits may advance main without changing the tag.
+Source archives must come from `git archive` of the build commit, not the unfiltered workspace.
 
-Before publication: close compliance gates; review the complete proposed source tree;
-run release tests from an exact commit; build final metadata/installer from that commit;
-include required third-party source and notices; generate checksums; review all assets;
-create the matching tag; inspect for an existing Tokentra repo again to avoid duplicates.
-Obtain the separately required publication authorisation. Only then create/update the public repository and release. Verify public anonymous
-access to both source and assets before reporting successful publication.
+## Assets and verification
 
-For LGPL source delivery, use the two existing full archives in
-`release-audit/third-party-sources`, with hashes in `docs/compliance/qt-correspondence.json`.
-Upload them as companion assets with equivalent access beside any authorised installer;
-private retention or an upstream homepage URL is insufficient. Portable binaries require
-a Microsoft recipient-acceptance arrangement; the current setup supplies an approved
-licence page. Do not publish a portable ZIP without equivalent terms handling.
+The primary binary is `Tokentra-1.0.0-windows-x64-setup.exe`. Do not publish a
+portable binary without an equivalent Microsoft recipient-acceptance arrangement.
+Publish the two complete QtBase/PySide 6.12.0 source archives identified in
+QT_REPLACEMENT.md beside the binary, with equivalent access, not just upstream links.
+Include source revision, checksums, third-party notices and release notes.
 
-The audit found two historical local document blobs containing the developer profile
-path, with no high-signal credential matches in 269 scanned text blobs. Current docs
-use environment-variable notation. Keep historical local commits for investigation;
-public preparation must use a clean initial branch/current-tree archive rather than
-pushing those historical commits. No shared history was rewritten or force-pushed.
-
-The tested compliance installer is cleared for final publication authorisation under
-the documented delivery conditions. The owner has not authorised publication in
-this pass. Final v1.0 version/tag promotion, an exact final build and asset review
-remain part of a separately authorised release workflow. Do not infer publication
-authorisation from closing licensing or desktop verification checks.
+Review current files and all clean-branch history for private paths/secrets before
+creating or updating `ezequiel-gb/Tokentra`. Never upload raw private desktop logs.
+After publication verify default branch, MIT, tag commit and anonymous access to
+every required asset; compare downloaded bytes with recorded SHA-256 checksums.
+Do not describe macOS/Linux packages as released or clean-machine testing as completed.

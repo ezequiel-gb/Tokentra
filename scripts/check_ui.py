@@ -29,7 +29,7 @@ def main():
                                     cwd=folder, env=environment, timeout=60)
             data = json.loads(report.read_text('utf-8'))
             assert result.returncode == 0 and data['status'] == 'passed', data
-            assert data['version'] == '1.0.0-rc.3' and data['platform'] == 'windows'
+            assert data['version'] == '1.0.0' and data['platform'] == 'windows'
             print(f'Native frozen UI scale {scale}: passed; {len(data["numeric_layouts"])} numeric layouts; screenshots saved', flush=True)
 
 

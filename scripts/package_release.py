@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dist-dir", type=Path, default=ROOT / "dist")
-    parser.add_argument("--label", default="1.0.0-rc.3")
+    parser.add_argument("--label", default="1.0.0")
     args = parser.parse_args()
     if sys.platform != "win32":
         raise SystemExit("This archive script is for the Windows delivery. Use native packaging on other platforms.")

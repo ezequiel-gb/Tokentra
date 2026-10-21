@@ -1,24 +1,31 @@
-# Tokentra v1.0 release preparation (unreleased)
+# Tokentra v1.0.0 | Windows
 
-The application feature/UI baseline remains 1.0.0-rc.3. No final v1.0 artefact or tag
-is approved. MIT was authorised with Copyright (c) 2026 Ezequiel Gomez.
+Tokentra provides accurate local OpenAI text token counting, a dedicated desktop
+workspace, three bundled encodings and interactive Context Planning.
 
-This audit adds dependency/source evidence, GPL/LGPL and upstream component notices,
-a licence-aware clean source preparation, and corrects build-host PATH contamination
-of packaged OpenSSL/UCRT DLLs. Counting, workers, geometry, planning and UI are unchanged.
+- Token Counter uses tiktoken for exact raw-text counts, with Unicode code-point
+  characters, words, plain-text import and background processing.
+- Context Planning compares shared text and an additional allowance with a capacity
+  you specify. It does not measure live ChatGPT context or predict hallucinations.
+- No browser, API key or internet connection is required for application operation.
+  No telemetry or automatic document saving is implemented.
+- The conventional per-user Windows installer includes required notices and scoped
+  Microsoft runtime terms. Upgrades from RC3 retain the stable installation identity.
 
-Publication remains on hold. Owner reports accepting Community 2022 terms; Microsoft
-runtime terms during setup are approved. Native/Rust notices and Qt source/replacement
-guidance are prepared. The actual desktop compliance upgrade, installed offline check and Settings registration
-are verified. Separate publication authorisation remains required; recommended provenance/rebuild checks are distinguished from legal duties.
-See COMPLIANCE.md and RELEASE_READINESS.md. Retain existing RC3 installers for rollback.
+## Install
 
-After these gates close, set the final version consistently, commit the reviewed source,
-build from that exact revision, repeat applicable offline/installer tests, create a matching
-v1.0.0 tag, and generate checksums. The intended installer name is
-Tokentra-1.0.0-windows-x64-setup.exe. Publish only after the package and source are cleared.
+Verify the setup SHA-256 against SHA256SUMS.txt, close Tokentra and open
+`Tokentra-1.0.0-windows-x64-setup.exe` in File Explorer. Follow the wizard and
+launch Tokentra from the Start menu. Uninstall from Windows Installed Apps.
+The installer is unsigned and may produce Windows security/reputation warnings;
+verify provenance without disabling security protections.
 
-Community 2022 17.14.42 is independently confirmed complete and launchable; working
-MSBuild ran the installed offline verification. The scoped licence acceptance gate
-was observed in setup. All 353 installed files match the approved compliance candidate.
-No application functionality or native dependency bytes changed in this continuation.
+Windows 11 x64 is the tested target. macOS and Linux packages have not been
+released or validated. Very large editor documents may pause layout; Count file
+avoids editor layout overhead but still requires memory for the entire input.
+Raw-text counts exclude conversation formatting, hidden instructions and service
+overhead. No universal model compatibility or performance guarantee is implied.
+
+QtBase and PySide/Shiboken corresponding-source archives accompany the installer
+on the same release. See THIRD_PARTY_NOTICES.md, docs/QT_REPLACEMENT.md and
+the build manifest for licences, checksums, verification scope and source revision.

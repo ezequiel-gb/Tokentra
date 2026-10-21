@@ -1,7 +1,7 @@
 # Third-party notices and redistribution inventory
 
 Tokentra code is MIT licensed, Copyright (c) 2026 Ezequiel Gomez. Third-party software
-retains its own licences. **Publication remains on hold pending separate final authorisation**; see
+retains its own licences. The Windows installer retains scoped Microsoft terms and LGPL companion-source delivery; see
 [COMPLIANCE.md](docs/COMPLIANCE.md). Community 2022 17.14.42 is independently verified; the owner accepted its terms.
 The approved scoped Microsoft runtime terms were verified during actual setup. MIT does not satisfy
 Qt or other dependency obligations. See top-level INSTALLATION_TERMS.txt and QT_REPLACEMENT.md

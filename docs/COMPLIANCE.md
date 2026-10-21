@@ -1,7 +1,7 @@
-# Redistribution assessment — Windows candidate verified; publication held
+# Redistribution assessment — Windows 1.0.0
 
-21 October 2026; functional baseline **1.0.0-rc.3**. Publication remains on hold by
-owner instruction. This engineering assessment is not a formal legal opinion.
+21 October 2026; release **1.0.0**, promoted from the verified RC3 baseline.
+The owner authorises publication after exact final-build validation and companion-source delivery. This engineering assessment is not a formal legal opinion.
 It supersedes earlier blanket requirements for an independent Qt rebuild and
 complete historical native build reconstruction.
 
@@ -24,7 +24,7 @@ A recommended engineering test is not independently a legal obligation.
 | libffi/xz exact versions | B/C: provenance precision | ABI 8 and static liblzma; no supplier manifest; applicable licence families documented | Additional verification recommended | Obtain supplier manifest on runtime refresh; do not assign upstream default pins to custom binaries | No: MIT/public-domain/0BSD do not require full build histories |
 | Security | B: deployed attack-surface review | Advisory review below; plain-text input; fixed tokeniser regexes; no online service | Resolved subject to documented conditions | Recheck advisories before publication | No exploitable application input path established in this review |
 | Desktop installation | B: actual Settings visibility and lifecycle | New exact-installer desktop upgrade, one Settings entry, 353 matching files, restart and installed offline check; previous visible uninstall/reinstall retained | Resolved | Retain exact evidence; repeat applicable checks after future binary changes | No; no unnecessary new uninstall cycle |
-| Publication | Owner instruction | Explicit hold in current request | Unresolved mandatory requirement | Separate final publication authorisation after gates pass | Yes; no public action in this pass |
+| Publication | Owner instruction | Explicit final Windows publication authorisation | Resolved subject to documented conditions | Validate the exact final installer and publish matching companion sources | Final-build and delivery gates apply |
 
 ## Microsoft runtime: files and no-cost deployment options
 
@@ -131,8 +131,7 @@ replacement steps and rebuild guidance. The ordinary external libraries are writ
 by the installing user and have no Tokentra signature/hash gate. Tokeniser checks
 cover BPE data only. An independently modified Qt build was not tested; doing one
 is B/C assurance, not a separate mandatory licence condition. No formal written
-source offer or upstream-homepage-only delivery scheme is used. Archives remain
-local until publication is separately authorised.
+source offer or upstream-homepage-only delivery scheme is used. Both full archives must be downloadable beside the Windows installer on the same public release; checksums and provenance are recorded in QT_REPLACEMENT.md.
 
 ## Native and Rust notice/provenance resolution
 
@@ -203,16 +202,16 @@ evidence remains valid for its exact earlier installer; that destructive cycle w
 not unnecessarily repeated for licence-only changes.
 Do not substitute command registry observations for desktop verification. No clean
 VM, physically disconnected test or process-wide packet capture is claimed.
-No final v1.0 tag, public release, push or asset upload is authorised by this assessment.
+This assessment does not itself grant publication authority. The owner separately authorised the final Windows release, subject to final-build verification and source delivery.
 
 ## Current decision
 
 All identified mandatory redistribution requirements have documented resolutions
 for the tested Windows candidate. No unresolved owner licensing decision remains.
 This is a reasoned release-engineering assessment, not a legal-compliance certificate.
-The setup-only candidate is ready for final publication authorisation, **subject to
+The setup-only distribution is cleared under the documented conditions, **subject to
 actual delivery of the retained complete Qt/PySide source archives and notices with
 any authorised binary download**, retention of the Microsoft acceptance page, and
-ordinary final version/tag/asset review. Publication remains expressly on hold.
+ordinary final version/tag/asset review. Exact final-build evidence is maintained in RELEASE_READINESS.md and the release build manifest.
 A future portable binary still needs an equivalent Microsoft recipient-acceptance
 arrangement and is not approved merely by this installer result.

@@ -1,12 +1,11 @@
 # Windows installer maintenance
 
-Windows 11 x64 is the tested target. Current application baseline: 1.0.0-rc.3.
-These are local evaluation packages; public distribution is blocked (COMPLIANCE.md).
+Windows 11 x64 is the tested target. Current application version: 1.0.0.
+Publication follows the final verification gates in RELEASE_READINESS.md and COMPLIANCE.md.
 Setup is unsigned and may produce publisher/reputation warnings. Verify provenance
 and SHA-256; do not disable security protection. MIT is approved for Tokentra;
 the owner reports Community 2022 licence acceptance and approved Microsoft runtime terms
-during setup. Final updated-installer verification and separate publication authorisation
-remain required; see COMPLIANCE.md.
+during setup. The owner authorises the final Windows release after exact final-build verification; see COMPLIANCE.md.
 
 ## Stable identity
 
@@ -15,7 +14,7 @@ remain required; see COMPLIANCE.md.
 - Per-user directory: %LOCALAPPDATA%\Programs\Tokentra; no administrator required.
 - HKCU uninstall key: Software\Microsoft\Windows\CurrentVersion\Uninstall\{6CD1A9C2-CE1B-4EE2-BFB4-C8ED54D7C2A6}_is1.
 - Start menu shortcut; optional desktop shortcut. AppUserModelID: Tokentra.Desktop.
-- Display version 1.0.0-rc.3; PE version 1.0.0.3.
+- Display version 1.0.0; PE version 1.0.0.0. Inno uses the stable AppId and ignoreversion payload rules for RC3 upgrades.
 - Close Tokentra before upgrading/uninstalling. The mutex/legacy window guard refuses
   installation while running; it never terminates the app or discards unsaved text.
 - In-place upgrades retain one registration and valid preferences. Uninstall removes
@@ -79,8 +78,7 @@ the discrepancy. Launch context and independent Settings verification were decis
 
 Do not mark Installed Apps verified solely because scripts find a registry key. In this
 environment the command runner continued to see a key after a visible desktop uninstall.
-Retain real desktop evidence for install, removal and return. Public redistribution is
-still blocked by licensing. This is not clean-VM or macOS/Linux verification.
+Retain real desktop evidence for install, removal and return. This historical finding does not establish a current licensing blocker; see COMPLIANCE.md. This is not clean-VM or macOS/Linux verification.
 
 ## Compliance candidate
 

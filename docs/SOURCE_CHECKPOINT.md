@@ -1,5 +1,7 @@
-# Local release audit source checkpoint
+# Release source checkpoint
 
-Publication remains blocked; see docs/COMPLIANCE.md. Baseline is 1.0.0-rc.3.
+Version 1.0.0; see docs/COMPLIANCE.md and docs/PUBLICATION.md.
 This tree excludes developer caches, downloaded build tools, prior binary packages
-and user-specific diagnostic history. It is a preparation checkpoint, not v1.0.0.
+and user-specific diagnostic history. The build manifest records the exact committed
+build source. The release tag identifies that commit; subsequent evidence-only
+documentation updates do not change the immutable build source.

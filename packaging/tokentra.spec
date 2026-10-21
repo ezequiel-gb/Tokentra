@@ -69,4 +69,4 @@ for source, name in ((root / 'LICENSE', 'LICENSE.txt'),
     shutil.copyfile(source, Path(DISTPATH) / 'Tokentra' / name)
 if sys.platform == 'darwin':
     app = BUNDLE(bundle, name='Tokentra.app', bundle_identifier='app.tokentra.desktop',
-                 info_plist={'CFBundleShortVersionString': '1.0.0', 'CFBundleVersion': '1.0.0.3', 'NSHighResolutionCapable': True})
+                 info_plist={'CFBundleShortVersionString': '1.0.0', 'CFBundleVersion': '1.0.0', 'NSHighResolutionCapable': True})

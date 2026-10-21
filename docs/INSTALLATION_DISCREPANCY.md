@@ -1,6 +1,6 @@
 # Windows installation discrepancy investigation
 
-21 October 2026. **Resolved on the visible Windows desktop; public publication remains blocked by the separate licensing gates.** This report supersedes earlier
+21 October 2026. **Resolved on the visible Windows desktop; this is historical RC3 evidence. Final-release checks are recorded separately in RELEASE_READINESS.md.** This report supersedes earlier
 claims that registry checks alone established Windows Installed Apps visibility.
 
 ## Established findings

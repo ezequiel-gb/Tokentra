@@ -9,26 +9,30 @@ The approved reference is [Tokentra_Product_Specification.md](Tokentra_Product_S
 
 ## Status and platform support
 
-The approved application baseline is **1.0.0-rc.3**. Public distribution remains on hold pending separate final owner authorisation; no final v1.0 download is available. Windows 11 x64 is the tested platform. macOS and Linux share the
-source and have native packaging configurations, but their builds have not been validated here.
-See the [current release-readiness report](docs/RELEASE_READINESS.md) for evidence, remaining checks and the publication decision.
-No public repository or release has been created by this work. See [redistribution gates](docs/COMPLIANCE.md).
+**Tokentra 1.0.0 for Windows 11 x64** is the first Windows release. macOS and Linux share the
+source and native packaging configuration, but packages for those platforms have not been released or validated.
+See the [release evidence](docs/RELEASE_READINESS.md) and [redistribution assessment](docs/COMPLIANCE.md).
 
-Installation verification now includes the actual Windows Settings interface. Earlier command-side
-registry checks were insufficient. See the [installation-context investigation](docs/INSTALLATION_DISCREPANCY.md)
-and use File Explorer for the local registration-repair installer test.
+## Windows installation and uninstallation
 
-## Run the Windows build
+Download [Tokentra-1.0.0-windows-x64-setup.exe](https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/Tokentra-1.0.0-windows-x64-setup.exe)
+from the [v1.0.0 release](https://github.com/ezequiel-gb/Tokentra/releases/tag/v1.0.0).
+Compare its SHA-256 with `SHA256SUMS.txt` from that release before running it.
+Close Tokentra, open the installer in File Explorer and follow the wizard. Setup presents
+Microsoft runtime terms applying only to Microsoft components; Tokentra remains MIT licensed.
+No Python installation, API key or account is required. The per-user installer normally
+requires no administrator rights and uses `%LOCALAPPDATA%\Programs\Tokentra`.
+Launch **Tokentra** from the Start menu or optional desktop shortcut.
 
-For authorised local evaluation, the retained candidate is `release-rc3/Tokentra-1.0.0-rc.3-windows-x64-setup.exe`. No public download is offered. Once a release is cleared, verify the downloaded installer against its published SHA-256 before running it. The per-user installer requires no administrator
-rights and registers **Tokentra** in Windows Installed Apps. Launch from the Start menu or the optional desktop
-shortcut. Uninstall through Installed Apps. Close Tokentra first so unsaved editor text is not lost.
-Upgrades retain the same installation identity and preferences. The default location is
-`%LOCALAPPDATA%\Programs\Tokentra`. `Start Tokentra.cmd` prefers this installed application.
+To uninstall, close Tokentra and choose **Settings → Apps → Installed apps → Tokentra → Uninstall**.
+The uninstaller removes installer-created files and shortcuts, retaining preferences and unrelated files.
+Upgrading from RC3 uses the same application identity and retains valid preferences.
+Text is never automatically saved. A conventional installer is the only binary distribution;
+no portable ZIP is offered.
 
-Python, API keys, accounts and internet access are not required at runtime. This unsigned Windows 11 x64
-release candidate is for local evaluation; publication remains on hold. Unsigned setup files can trigger Windows publisher or reputation warnings. Verify provenance and checksums; do not disable security protections. The optional archive explicitly labelled
-**Portable** is a secondary distribution: extract it and keep the whole `Tokentra` folder together.
+The installer is **unsigned**. Windows may display publisher or reputation warnings.
+Verify the download source and checksum; do not disable security protections.
+Application operation and tokeniser initialisation are entirely local after installation.
 
 ## Features
 
@@ -131,9 +135,9 @@ tiktoken constructors. Review the manifest and rerun reference tests after any u
 
 ```powershell
 python scripts/collect_licences.py
-python -m PyInstaller packaging/tokentra.spec --distpath dist-rc3 --workpath build-rc3
-python scripts/check_packaged.py --dist-dir dist-rc3 --report docs/rc3/offline-packaged.json
-python scripts/audit_package.py --dist-dir dist-rc3 --report docs/rc3/package-audit.json
+python -m PyInstaller packaging/tokentra.spec --distpath dist-final --workpath build-final
+python scripts/check_packaged.py --dist-dir dist-final --report offline-packaged.json
+python scripts/audit_package.py --dist-dir dist-final --report package-audit.json
 ```
 
 Build the primary Windows installer using Inno Setup 6.7.3:
@@ -200,15 +204,13 @@ It never calls the URL-backed tiktoken registry. Missing or damaged assets cause
   passed at Qt scale factors 1, 1.25, 1.5 and 2. Actual OS scaling changes, manual dragging/snapping, multiple monitors,
   external-monitor disconnection and assistive technologies still need physical desktop testing.
 - Active tokenisation is allowed to finish on close; the event loop remains running while it finishes. There is no unsafe cancellation.
-- Publication remains on hold. Community licensing is supported by owner acceptance and a verified Community installation. Scoped runtime terms,
-  native/Rust notices and LGPL source/replacement arrangements are prepared; the actual desktop upgrade is verified.
-  Separate publication authorisation and documented companion-source delivery remain required. Residual provenance/rebuild recommendations are distinguished from licence obligations in [COMPLIANCE.md](docs/COMPLIANCE.md).
-
 ## Licence and publication
 
 Tokentra is licensed under the [MIT licence](LICENSE), Copyright (c) 2026 Ezequiel Gomez.
 Third-party software retains its own terms; the owner selected community LGPLv3 for Qt/PySide6.
 The application licence does not discharge those obligations. See [third-party notices](THIRD_PARTY_NOTICES.md)
-and the [compliance assessment](docs/COMPLIANCE.md). The owner explicitly requested that publication remain
-on hold through final validation and a separate publication-authorisation step. Community 2022 17.14.42 is independently verified and the owner accepted its terms.
-The approved scoped Microsoft runtime licence page and actual desktop upgrade are verified.
+and the [compliance assessment](docs/COMPLIANCE.md). The Windows installer includes the scoped
+Microsoft runtime acceptance page and full retained third-party notices. Matching QtBase and PySide/Shiboken
+source archives are companion assets on the same release, with checksums and
+[library replacement instructions](docs/QT_REPLACEMENT.md). These dependency terms apply independently of MIT.
+Residual provenance and independent-rebuild recommendations are documented without claiming formal legal certification.
