@@ -106,3 +106,10 @@ installed empty-cache offline checks passed. New uninstall/reinstall was not nee
 for legal-file changes; the earlier actual desktop lifecycle evidence is retained.
 The compliance candidate remains installed and open in Counter mode. No clean VM
 or physical network-disconnection claim is made. See docs/compliance/desktop-upgrade.json.
+
+## Final 1.0.0 upgrade
+
+The newer final installer completed actual desktop RC3→1.0.0 upgrade, Microsoft
+acceptance, one Settings entry, registered launch and matching installed payload.
+Version 1.0.0 remains installed. See RELEASE_READINESS.md; earlier candidate
+state descriptions above are historical. No additional uninstall cycle was needed.
