@@ -215,3 +215,16 @@ any authorised binary download**, retention of the Microsoft acceptance page, an
 ordinary final version/tag/asset review. Exact final-build evidence is maintained in RELEASE_READINESS.md and the release build manifest.
 A future portable binary still needs an equivalent Microsoft recipient-acceptance
 arrangement and is not approved merely by this installer result.
+
+## Final Windows delivery, 21 October 2026
+
+The exact v1.0.0 installer passed final payload, installed empty-cache and actual
+desktop RC3 upgrade/Settings checks. All 51 native DLL/PYD files are unchanged from
+the inventoried candidate, including all ten Microsoft runtime copies. The scoped
+licence page and required acceptance were observed again. Required notices are present.
+The public v1.0.0 release supplies both complete corresponding-source archives with
+equivalent anonymous access beside the binary. All twelve release assets were downloaded
+without authentication and matched their recorded SHA-256. The source-delivery condition
+is satisfied for this release; retain it for future redistribution. No portable binary
+is published. See RELEASE_READINESS.md and release-v1/public-verification.json.
+This evidence does not constitute formal legal certification.

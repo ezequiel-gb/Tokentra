@@ -1,6 +1,10 @@
 # Tokentra 1.0.0 Windows release verification
 
-21 October 2026. **Final technical gates passed; public delivery authorised.**
+21 October 2026. **Tokentra v1.0.0 for Windows published successfully.**
+Repository: https://github.com/ezequiel-gb/Tokentra.
+Release: https://github.com/ezequiel-gb/Tokentra/releases/tag/v1.0.0.
+All twelve assets downloaded anonymously and matched SHA-256, including both
+complete Qt/PySide source companions. See [public verification](release-v1/public-verification.json).
 The exact build source is `f85d47441192e0b7960435774e039572f50b155f`. Tag `v1.0.0` must
 identify that commit. This evidence-only documentation commit advances main without
 changing build inputs or the release tag. The source checkpoint's pending-check

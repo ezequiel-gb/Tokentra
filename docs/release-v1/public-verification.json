@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-10-21T21:07:28.6092888Z",
+  "authentication": "None: public HTTP/API requests, no Authorization header",
+  "repository_url": "https://github.com/ezequiel-gb/Tokentra",
+  "repository_http_status": 200,
+  "default_branch": "main",
+  "main_commit": "0324e36efbeca830ed7c49d70e3c42923270538f",
+  "public_branches": [
+    "main"
+  ],
+  "licence": "MIT",
+  "tag": "v1.0.0",
+  "tag_commit": "f85d47441192e0b7960435774e039572f50b155f",
+  "release_url": "https://github.com/ezequiel-gb/Tokentra/releases/tag/v1.0.0",
+  "release_http_status": 200,
+  "asset_count": 12,
+  "assets": [
+    {
+      "name": "Tokentra-1.0.0-windows-x64-setup.exe",
+      "bytes": 25491664,
+      "sha256": "550347a1275c6c89793003326dab7f924a4067eaf9dddf3cbb7bcb91c4514e93",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/Tokentra-1.0.0-windows-x64-setup.exe",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "Tokentra-1.0.0-source.zip",
+      "bytes": 4187257,
+      "sha256": "debacb68e25eb087ac34959b55a0a725b65c58eca7c1ee1d2db99bf5e9ccd972",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/Tokentra-1.0.0-source.zip",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "Tokentra-1.0.0-licensing-materials.zip",
+      "bytes": 919677,
+      "sha256": "3a59454342a63e68154f75a06ed202ef43e0c178fee2c18aa50690e64e8cf22b",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/Tokentra-1.0.0-licensing-materials.zip",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "THIRD_PARTY_NOTICES.md",
+      "bytes": 6444,
+      "sha256": "49b351dfb04f289dc6baa99b330ccf105d3ac17bc23cf6a78dd8210c39401de1",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/THIRD_PARTY_NOTICES.md",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "QT_REPLACEMENT.md",
+      "bytes": 5466,
+      "sha256": "be50cf813bb1df33940f98a225dc0f08f370db3e9ee6c2a4fdf382d435c37c28",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/QT_REPLACEMENT.md",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "RELEASE_NOTES.md",
+      "bytes": 3083,
+      "sha256": "7e58dcbb1e32282ec03e9e43b7f3274d85337fd8274e121e258d8be22ca85fb4",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/RELEASE_NOTES.md",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "build-manifest.json",
+      "bytes": 6717,
+      "sha256": "93baf78f830282865e45401c3b995323fb5067c6e1454425e75513d3e54066f8",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/build-manifest.json",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "payload-manifest.json",
+      "bytes": 77238,
+      "sha256": "4c7673088b8c43183ed9585ecbe67d1ffe36fe2f32913ddcdc13087d744d2ad3",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/payload-manifest.json",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "desktop-upgrade.json",
+      "bytes": 1917,
+      "sha256": "6e91581abeea006eeb06fb20105dcad011f8e3f4153f3ec2c33447b204f6f671",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/desktop-upgrade.json",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "qtbase-everywhere-src-6.12.0.tar.xz",
+      "bytes": 51220268,
+      "sha256": "a951bd163c7b80fc6b8c88d7668fb56abf91c152373e13c10666763238131307",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/qtbase-everywhere-src-6.12.0.tar.xz",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "pyside-setup-everywhere-src-6.12.0.tar.xz",
+      "bytes": 18211772,
+      "sha256": "099c1a597cf33c1b000e11cf68a0b82d216fb802bf81726efc720394f10c7751",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/pyside-setup-everywhere-src-6.12.0.tar.xz",
+      "anonymous_download": "passed"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 1038,
+      "sha256": "f0470c16b41e8c13fc5b0463f9fe69fcedc26d823c08ea146e878595210f065f",
+      "url": "https://github.com/ezequiel-gb/Tokentra/releases/download/v1.0.0/SHA256SUMS.txt",
+      "anonymous_download": "passed"
+    }
+  ],
+  "readme_installer_link": "verified",
+  "screenshots": [
+    "token-counter.png",
+    "context-planning.png"
+  ],
+  "main_commit_scope": "Snapshot before this verification-only documentation commit; release tag and assets remain unchanged."
+}
