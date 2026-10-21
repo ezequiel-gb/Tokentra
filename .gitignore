@@ -15,3 +15,5 @@ releases/
 release-*/
 !docs/release-audit/
 !docs/release-audit/*.json
+!docs/release-v1/
+!docs/release-v1/*.json

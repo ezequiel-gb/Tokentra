@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "installer_sha256": "550347a1275c6c89793003326dab7f924a4067eaf9dddf3cbb7bcb91c4514e93",
+  "from_version": "1.0.0-rc.3",
+  "to_version": "1.0.0",
+  "launch_context": "Actual interactive Windows desktop: double-click in File Explorer",
+  "setup_completed": true,
+  "microsoft_terms": {
+    "display_matches_approved_input_whitespace_normalized": true,
+    "next_disabled_before_acceptance": true,
+    "next_enabled_after_acceptance": true,
+    "accepted_with_owner_approval": true
+  },
+  "windows_settings": {
+    "entries": 1,
+    "display_name": "Tokentra",
+    "version": "1.0.0",
+    "publisher": "Ezequiel Gomez",
+    "uninstall_action_enabled": true
+  },
+  "installed_payload": {
+    "files_matching": 353,
+    "mismatches": 0,
+    "executable_version": "1.0.0",
+    "uninstaller_version": "1.0.0",
+    "uninstaller_present": true,
+    "directory": "%LOCALAPPDATA%/Programs/Tokentra"
+  },
+  "start_menu_app_id_launch": true,
+  "visual_reference": {
+    "input": "Hello world!",
+    "tokens": 3,
+    "words": 2,
+    "characters": 12,
+    "capacity": 128000,
+    "allowance": 8000,
+    "planned": 8003,
+    "unallocated": 119997
+  },
+  "preferences": {
+    "encoding": "o200k_base",
+    "mode_restored": "Token Counter",
+    "scenario_values_retained": true,
+    "workspace_blank_after_restart": true,
+    "byte_for_byte_registry_snapshot": false
+  },
+  "historical_uninstall_reinstall": "Reused actual desktop RC3 lifecycle evidence; no new destructive cycle needed for metadata promotion",
+  "command_registry_context": "Supplemental runner view still reports RC3; established isolation discrepancy persists. Actual Settings independently shows one 1.0.0 entry. No claim that command-side HKCU is the desktop inventory.",
+  "private_screenshots": "Retained locally; raw Windows account/desktop captures are excluded from public source."
+}
